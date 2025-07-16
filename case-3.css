@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-size: 1rem;
+    text-align: left;
+    background-color: #f5f5f5;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-variant-numeric: slashed-zero;
+    line-height: 1.55;
+    color: #1c1c1c;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.main {
+    padding-top: 5rem;
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    border-width: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #cacac9;
+}
+
+.first-section {
+    display: grid;
+    /* grid-template-columns: 0.5fr 1fr 0.5fr; */
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    align-items: baseline;
+    margin-bottom: 0px;
+}
+
+.h1 {
+    font-family: 'Source Code Pro', monospace;
+    /* text-transform: uppercase; */
+    text-align: center;
+    /* line-height: 1.5; */
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1;
+}
+
+.button {
+    color: #1c1c1c;
+}
+
+.link {
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.button {
+    display: block;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1;
+    /* margin-bottom: 4px; */
+}
+
+.arrow {
+    font-family: 'Source Code Pro', monospace;
+    display: inline;
+    text-decoration: none;
+    color: #cacac9;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1;
+    transition: color 0.3s ease;
+    margin-right: 4px;
+}
+
+.span-inline {
+    display: inline;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 1px solid #cacac9;
+}
+
+.arrow:hover {
+    color: #1c1c1c;
+}
+
+
+.span-inline:hover {
+    border-color: #1c1c1c;
+    color: #1c1c1c;
+}
+
+.button:hover .arrow {
+    color: #1c1c1c;
+    border-color: #1c1c1c;
+}
+
+.button:hover .title {
+    color: #1c1c1c;
+    border-color: #1c1c1c;
+}
+
+.main-tags {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.cyan {
+    background-color: #BFE8D9;
+    color: #143F3C;
+}
+
+.yellow {
+    background-color: #F6E2A0;
+    color: #503D02;
+}
+
+.purple {
+    background-color: #E2D9E9;
+    color: #31234E;
+}
+
+.tag {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.gray {
+    background-color: hsl(51, 1%, 88%);
+    color: hsl(60, 1%, 20%);
+}
+
+.h2 {
+    font-size: 1rem;
+    line-height: 1.55;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.h3 {
+    font-size: 1rem;
+    line-height: 1.55;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.task-1 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.task-1::before {
+    position: absolute;
+    left: 1px;
+    top: -4px;
+    font-family: 'Source Code Pro', monospace;
+    content: '1/';
+    color: #7c7c79;
+    font-size: 0.875rem;
+}
+
+.task-2 {
+    position: relative;
+}
+
+.task-2::before {
+    position: absolute;
+    left: 1px;
+    top: -4px;
+    font-family: 'Source Code Pro', monospace;
+    content: '2/';
+    color: #7c7c79;
+    font-size: 0.875rem;
+}
+
+.p {
+    margin-bottom: 16px;
+}
+
+.p-space {
+    padding-left: 12px;
+}
+
+.p-space-large {
+    padding-left: 1.3rem;
+}
+
+.decoration {
+    color: #7c7c79;
+}
+
+.list {
+    margin-bottom: 16px;
+}
+
+.ul-list,
+ol {
+    padding-left: 24px;
+}
+
+.caption {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    color: #7c7c79;
+}
+
+.ol-list-item {
+    margin-bottom: 12px;
+}
+
+.list-title {
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+::marker {
+    color: #1c1c1c;
+}
+
+.case-image {
+    margin-bottom: 1.5rem
+}
+
+.case-image-style {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.stage-2 img {
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #7c7c79;
+    margin-bottom: 4px
+}
+
+.list-style {
+    margin-bottom: 12px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card {
+    background-color: hsl(60, 1%, 93%);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+}
+
+.user {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.main-idea p {
+    margin-bottom: 6px;
+}
+
+.main-idea p:first-child {
+    font-weight: 600;
+}
+
+.bg-color {
+    background-color: #C6DDE8;
+    border-radius: 3px;
+    padding: 0px 3px;
+}
+
+.group-name {
+    text-transform: uppercase;
+    font-size: 0.813rem;
+}
+
+.footer {
+    margin-top: 5rem;
+}
+
+/* Стили для модального окна */
+.image-modal {
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Оставаться на месте, даже при прокрутке */
+    z-index: 1000;
+    /* Поверх всего */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включить прокрутку, если изображение больше экрана */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Черный фон с прозрачностью */
+    backdrop-filter: blur(5px);
+    /* Эффект размытия фона */
+    -webkit-backdrop-filter: blur(5px);
+    /* Для Safari */
+    justify-content: center;
+    /* Центрировать содержимое по горизонтали */
+    align-items: center;
+    /* Центрировать содержимое по вертикали */
+    flex-direction: column;
+    /* Разместить изображение и подпись по вертикали */
+    padding: 20px;
+    /* Отступы по краям */
+    box-sizing: border-box;
+    /* Чтобы padding не увеличивал размер */
+    /* animation: fadeIn 0.2s forwards; */
+    /* Анимация появления */
+}
+
+/* Анимация появления модального окна */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* .image-modal.closing {
+    animation: fadeOut 0.2s forwards;
+} */
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    /* Максимальная ширина изображения */
+    max-height: 90%;
+    /* Максимальная высота изображения */
+    object-fit: contain;
+    /* Убедимся, что изображение полностью помещается */
+    transform: scale(0.8);
+    /* Начальный размер для анимации */
+    /*   animation: zoomIn 0.2s forwards; */
+    /* Анимация увеличения изображения */
+}
+
+/* Анимация увеличения изображения */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* .image-modal.closing .modal-content {
+    animation: zoomOut 0.2s forwards;
+} */
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.8);
+    }
+}
+
+
+.close-button {
+    position: absolute;
+    top: 35px;
+    right: 200px;
+    color: #f1f1f1;
+    font-size: 24px;
+    font-weight: 400;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001;
+    /* Поверх изображения */
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Подпись под увеличенным изображением */
+#modal-caption {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 16px;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* md-size */
+@media (max-width: 600px) {
+    .main {
+        padding-top: 1.25rem;
+    }
+
+    .first-section {
+        grid-template-columns: 0.2fr 1fr;
+    }
+
+    .h1 {
+        text-align: end;
+        line-height: 1.2;
+    }
+
+    .footer {
+        margin-top: 4rem;
+    }
+
+    .languages {
+        display: none;
+    }
+
+    .main-tags {
+        display: none;
+    }
+}

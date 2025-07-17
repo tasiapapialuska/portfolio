@@ -466,7 +466,7 @@ hr {
     }
 
     .h3 {
-        line-height: var(--line-height-xs);
+        line-height: var(--line-height-xss);
     }
 
     .title {
@@ -474,7 +474,6 @@ hr {
     }
 
     .h1 {
-        line-height: var(--line-height-xss);
         margin-bottom: 0.4rem;
     }
 
@@ -501,6 +500,7 @@ hr {
 
     .uni {
         font-size: var(--font-size-sm);
+        line-height: var(--line-height-xs);
     }
 
     .year,
@@ -512,6 +512,7 @@ hr {
     .title-ed {
         font-size: var(--font-size-sm);
         color: var(--fg-color-primary);
+        line-height: var(--line-height-xs);
     }
 
     .link {

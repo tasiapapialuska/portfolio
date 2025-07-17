@@ -174,97 +174,159 @@
                 </div>
             </section>
 
-            <section class="wip">
-                <h2 class="h2">WIP</h2>
-            </section>
-
-
             <section class="design">
                 <h2 class="h2">Дизайн решение</h2>
                 <div class="stage-1">
                     <div class="case-image">
-                        <img class="case-image-style zoomable-image" src="img/case-2/image-1.png" alt="" width="3840"
-                            height="2160">
-                        <p class="p caption">...</p>
+                        <img class="case-image-style zoomable-image" src="img/case-2/image-1.png"
+                            alt="Мобильный телефон, демонстрирующий навигационное приложение с картой города, на которой отображен синий маршрут общественного транспорта, иконки остановок и текущее местоположение пользователя."
+                            width="3840" height="2160">
+                    </div>
+
+                    <section class="scenario">
+                        <h2 class="h2">Сценарий</h2>
+                        <p class="p">На подъезде к остановке у водителя активируется кнопка «На остановке». После её
+                            нажатия, людям, которые ждут машину, приходит пуш-сообщение о том, что водитель на месте и
+                            их
+                            ожидает. До этого люди заказали через приложение «маршрутку», а сервис распределил их в
+                            порядке
+                            очерёдности заказа на случай, если пассажиров будет больше, чем мест в машине. Приоритет
+                            отдаётся тому, кто заказал раньше.</p>
+                    </section>
+
+                    <section class="implementation">
+                        <h2 class="h2">Реализация</h2>
+                        <p class="p">На подъезде к остановке у водителя активируется кнопка «На остановке». После её
+                            нажатия, людям, которые ждут машину, приходит пуш-сообщение о том, что водитель на месте и
+                            их
+                            ожидает. До этого люди заказали через приложение «маршрутку», а сервис распределил их в
+                            порядке
+                            очерёдности заказа на случай, если пассажиров будет больше, чем мест в машине. Приоритет
+                            отдаётся тому, кто заказал раньше.</p>
+                        <p class="p">После этого активируется возможность завершить поездку для текущих пассажиров. В
+                            нашем
+                            сценарии на этой остановке свою поездку завершает 2 пассажира.</p>
+                        <p class="p">Запускается таймер, чтобы водитель следил за временем отведённым на высадку и
+                            посадку
+                            пассажиров. </p>
+                        <p class="p">Он видит информацию про пассажиров: того, кого высаживает, тех, кто ещё ожидает
+                            высадки, ожидающих на остановке и тех, кто ещё в пути.</p>
+                        <p class="p">Водитель завершает поездку слайдером, чтобы избежать случайных нажатий и
+                            прокликиваний
+                            сразу всех пассажиров.</p>
+
+                        <div class="case-image">
+                            <img class="case-image-style zoomable-image" src="img/case-2/image-2.png"
+                                alt="Два экрана мобильного приложения такси, показывающие карту с синим маршрутом до «Лицей №23». На первом экране отображается информация о текущей поездке, на втором — обновленная информация о поездке, при этом на обоих экранах сверху видны детали маршрута, такие как «800 м» и ограничение скорости «60»."
+                                width="3840" height="2160">
+                        </div>
+
+                        <p class="p">Теперь после высадки пассажиров водитель может посадить новых.</p>
+                        <p class="p">На иконке остановки водитель видит количество новых пассажиров. В случае, если ему
+                            нужно увидеть подробную информацию про них, он может потянуть карточку вверх.</p>
+                        <p class="p">В случае чего, водитель может связаться с пассажиром, открыть расширенное меню или
+                            взаимодействовать напрямую через карточку пассажира.</p>
+                        <p class="p">Как и в случае завершения поездки, посадку и начала пути водитель подтверждает
+                            слайдером, но теперь справа налево, чтобы обратить внимание водителя, что теперь это посадка
+                            пассажира и избежать действий на автомате.</p>
+                        <p class="p">Далее начинается поездка до следующей остановки.</p>
+                    </section>
+
+                    <section class="audience">
+                        <h2 class="h2">Обоснование ценности решения</h2>
+                        <p class="p">Интерфейс был построен вокруг одного сценария, но самого ключевого в процессе
+                            работы водителя. Все действия последовательны, что снижает вероятность ошибки
+                            и перегрузки информацией.</p>
+                        <p class="p">Главные действия можно выполнять с минимальным количеством нажатий, чтобы
+                            обеспечить безопасность езды.</p>
+                        <p class="p">Около каждого пассажира отображается его сумма за проезд, чтобы обеспечить
+                            прозрачность дохода водителя и повысить его мотивацию.</p>
+                        <p class="p">Каждые шаги разбиты на этапы и сгруппированы, чтобы упростить интерфейс и дать
+                            возможность водителю совершать действия не отвлекаясь от дороги.</p>
+                        <p class="p">Решение разрабатывалось с учётом масштабируемости, чтобы его можно было
+                            адаптировать под другие сценарии.</p>
+                        <p class="p">Решение спроектировано таким образом, чтобы не просто повторять механику такси, а
+                            переосмыслить сценарий
+                            и адаптировать интерфейс под новую модель.</p>
+                    </section>
+                </div>
+
+                <div class="stage-2">
+                    <section class="approach">
+                        <h2 class="h2">Подход и структура</h2>
+
+                        <div class="list">
+                            <p class="list-title">Главные выводы анализа потребностей:</p>
+                            <ul class="ul-list">
+                                <li class="list-item">водители хотят увеличить заработок
+                                    или стабилизировать доход;</li>
+                                <li class="list-item">они часто сталкиваются с простоем, холостым пробегом, пустой
+                                    тратой
+                                    топлива
+                                    и времени;</li>
+                                <li class="list-item">водители недовольны текущими условиями работы (например, комиссии
+                                    агрегаторов, непредсказуемость заказов).</li>
+                            </ul>
+                        </div>
+
+                        <div class="list">
+                            <p class="list-title">Цели:</p>
+                            <ul class="ul-list">
+                                <li class="list-item">водители хотят увеличить заработок
+                                    или стабилизировать доход;</li>
+                                <li class="list-item">они часто сталкиваются с простоем, холостым пробегом, пустой
+                                    тратой
+                                    топлива
+                                    и времени;</li>
+                                <li class="list-item">водители недовольны текущими условиями работы (например, комиссии
+                                    агрегаторов, непредсказуемость заказов).</li>
+                            </ul>
+                        </div>
+
+                        <div class="list">
+                            <p class="list-title">Подход к дизайну:</p>
+                            <ul class="ul-list">
+                                <li class="list-item">концентрироваться на выгоде и пользе
+                                    для водителей;</li>
+                                <li class="list-item">указать на главные преимущества сервиса (оптимизированная и
+                                    эффективная работа, прозрачный доход, гибкий график
+                                    и социальная польза);</li>
+                                <li class="list-item">подчеркнуть, что это новый формат поездок, а не просто такси;</li>
+                                <li class="list-item">Tone of Voice должен быть нейтральным, уверенным, без
+                                    самовосхваления
+                                    и фамильярностей.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <div class="case-image">
+                        <img class="case-image-style zoomable-image" src="img/case-2/image-3.png"
+                            alt="Фрагмент веб-страницы с заголовком «Превратите поездку в прибыльный маршрут», текстовым описанием и синей кнопкой «Присоединиться». Справа изображен человек за рулем автомобиля, а на приборной панели установлен смартфон с навигационным приложением."
+                            width="3840" height="2160">
+                        <p class="p caption">На первом экране демонстрируется главное предложение сервиса, чтобы
+                            зацепить
+                            внимание водителя и дать чёткий мотив к действию. Hero-секция показывает что это за сервис,
+                            для
+                            кого и зачем он нужен.</p>
                     </div>
 
                     <div class="case-image">
-                        <img class="case-image-style zoomable-image" src="img/case-2/image-2.png" alt="" width="3840"
-                            height="2160">
-                        <p class="p caption">...
-                        </p>
+                        <img class="case-image-style zoomable-image" src="img/case-2/image-4.png"
+                            alt="Фрагмент веб-страницы с заголовком «Ваша работа по-новому» и четырьмя информационными блоками: «Эффективные маршруты», «Прогнозируемый доход», «Сбалансированный график» и «Польза для города». Ниже расположен заголовок «Старт в 3 шага» с тремя иконками и описаниями действий: «Заполните онлайн-форму», «Загрузите документы» и «Скачайте приложение»."
+                            width="3840" height="2160">
+                        <p class="p caption">Второй экран объясняет почему это выгодно и как просто можно начать.</p>
                     </div>
 
                     <div class="case-image">
-                        <img class="case-image-style zoomable-image" src="img/case-2/image-3.png" alt="" width="3840"
-                            height="2160">
-                        <p class="p caption">...
-                        </p>
-                    </div>
-
-                    <div class="case-image">
-                        <img class="case-image-style zoomable-image" src="img/case-2/image-4.png" alt="" width="3840"
-                            height="2160">
-                        <p class="p caption">...
-                        </p>
-                    </div>
-
-                    <div class="case-image">
-                        <img class="case-image-style zoomable-image" src="img/case-2/image-5.png" alt="" width="3840"
-                            height="2160">
-                        <p class="p caption">...
-                        </p>
+                        <img class="case-image-style zoomable-image" src="img/case-2/image-5.png"
+                            alt="Фрагмент мобильной версии веб-страницы с заголовком «Превратите поездку в прибыльный маршрут», кратким описанием, кнопкой «Присоединиться» и изображением человека за рулем автомобиля с телефоном-навигатором на приборной панели."
+                            width="3840" height="2160">
+                        <p class="p caption">Мобильная версия сохраняет логику
+                            и акценты, не перегружая пользователя.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- <section>
-                <h2 class="h2">Measuring success</h2>
-                <p class="p">To evaluate the effectiveness of the proposed design solution and confirm its value,
-                    metrics must be defined. If this solution is successful, we will see:</p>
-
-                <div class="list">
-
-                    <ol>
-                        <li class="ol-list-title">Reduction in operation time:</li>
-                        <p class="ol-list caption muted">The average time spent by users performing typical operations
-                            via
-                            a
-                            personalized ATM compared to standard usage.</p>
-                        <p class="ol-list-item">Significant time reduction due to pre-configuration and a simplified
-                            interface.</p>
-
-                        <li class="ol-list-title">Increase in task success rate:</li>
-                        <p class="ol-list caption muted">The percentage of successfully completed operations without
-                            user
-                            errors, especially for complex or infrequently performed operations.</p>
-                        <p class="ol-list-item">Increased percentage of successful operations, particularly among
-                            elderly
-                            and less experienced users.</p>
-
-                        <li class="ol-list-title">Increased feature usage frequency:</li>
-                        <p class="ol-list caption muted">The number of unique users regularly utilizing the operation
-                            personalization feature in the mobile application and/or connecting to the ATM via QR/NFC.
-                        </p>
-                        <p class="ol-list-item">High level of engagement with the new functionality.</p>
-
-                        <li class="ol-list-title">Growth in customer satisfaction score:</li>
-                        <p class="ol-list caption muted">Measurement of customers' willingness to recommend the bank
-                            and
-                            its services (specifically, the improved ATM user experience) to others.</p>
-                        <p class="ol-list-item">Increase in NPS due to enhanced convenience, security, and service
-                            innovation.</p>
-
-                        <li class="ol-list-title">Reduction in support inquiries:</li>
-                        <p class="ol-list caption muted">Decreased number of client inquiries related to difficulties
-                            using
-                            the
-                            ATM or the need for assistance from bank employees.</p>
-                        <p class="ol-list-item">Reduced operational costs and increased support team efficiency.</p>
-                    </ol>
-                </div>
-            </section>
- -->
             <footer class="footer">
 
             </footer>
@@ -272,12 +334,11 @@
     </div>
 
     <div id="image-modal" class="image-modal">
-        <!-- <span class="close-button">✕</span> -->
         <img class="modal-content" id="modal-image" alt="" src="#">
         <div id="modal-caption" class="caption"></div>
     </div>
 
-    <script src="lightbox.js"></script>
+    <script src="/script/lightbox.js"></script>
 
 </body>
 

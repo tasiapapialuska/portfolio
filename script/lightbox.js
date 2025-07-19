@@ -5,27 +5,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     images.forEach(img => {
         img.addEventListener('click', () => {
-            modal.style.display = 'flex';
-            modalImage.src = img.src;
-            modalImage.alt = img.alt;
+            const imageUrl = img.src;
+            const imageAlt = img.alt;
 
-            setTimeout(() => {
+            modal.style.display = 'none';
+            modalImage.src = '#';
+            modalImage.alt = '';
+
+            const preloader = new Image();
+            preloader.src = imageUrl;
+
+            preloader.onload = () => {
+                modalImage.src = imageUrl;
+                modalImage.alt = imageAlt;
+                modal.style.display = 'flex';
+
                 modal.addEventListener('click', closeModalOutside);
-            }, 50);
+            };
+
+            preloader.onerror = () => {
+                console.error('Ошибка загрузки изображения:', imageUrl);
+            };
         });
     });
 
-    closeButton.addEventListener('click', () => {
-        closeModal();
-    });
-
     function closeModal() {
-        modal.classList.add('closing');
-        modal.removeEventListener('click', closeModalOutside);
         setTimeout(() => {
             modal.style.display = 'none';
-            modal.classList.remove('closing');
-        }, 100);
+            modalImage.src = '#';
+            modalImage.alt = '';
+            modal.removeEventListener('click', closeModalOutside);
+        }, 0);
     }
 
     function closeModalOutside(event) {
@@ -33,4 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     }
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && modal.style.display === 'flex') {
+            closeModal();
+        }
+    });
 });

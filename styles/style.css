@@ -469,8 +469,8 @@ hr {
     }
 
     .h3 {
-        line-height: var(--line-height-xs);
-        /* margin-bottom: 9px; */
+        line-height: var(--line-height-xss);
+        margin-bottom: 6px;
     }
 
     .h1 {

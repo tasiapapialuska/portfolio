@@ -150,7 +150,7 @@ hr {
     font-family: var(--font-family-mono);
     display: inline;
     text-decoration: none;
-    color: var(--fg-color-border);
+    color: var(--color-border);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-base);
     line-height: var(--line-height-xs);
@@ -217,8 +217,10 @@ hr {
 }
 
 .group-name {
+    display: block;
     text-transform: uppercase;
     font-size: var(--font-size-xs);
+    margin-bottom: 2px;
 }
 
 .p {
@@ -242,11 +244,19 @@ hr {
 
 .list-title {
     list-style: none;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
+}
+
+.ol-list-title {
+    margin-bottom: 4px;
 }
 
 .ul-list, .ol-list {
     padding-left: 24px;
+}
+
+.list-item {
+    margin-bottom: 4px;
 }
 
 .caption {
@@ -394,28 +404,25 @@ hr {
     }
 
     .container {
-        padding: 0 16px;
+        padding: 0 20px;
+    }
+
+    .body {
+        line-height: var(--line-height-sm)
     }
 
     .header {
         grid-template-columns: 0.5fr 1.5fr;
     }
 
-    .body {
-        font-size: var(--font-size-sm);
-        line-height: var(--line-height-sm);
-    }
-
     .h1 {
         font-size: inherit;
         text-align: end;
-        line-height: var(--line-height-xss);
     }
 
     .button,
     .arrow {
         font-size: inherit;
-        line-height: var(--line-height-xss);
     }
 
     .h2 {
@@ -423,17 +430,9 @@ hr {
         line-height: inherit;
     }
 
-    .group-name {
-        font-size: var(--font-size-xxs);
-    }
-
     .p-margin-sm {
         font-size: inherit;
         line-height: inherit;
-    }
-
-    .caption {
-        font-size: var(--font-size-xs);
     }
 
     .footer {

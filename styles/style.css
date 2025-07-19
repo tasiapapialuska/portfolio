@@ -457,12 +457,15 @@ hr {
     }
 
     .body {
-        font-size: var(--font-size-sm);
-        line-height: var(--line-height-sm);
+        line-height: var(--line-height-base);
     }
 
     .cases-container {
         gap: 40px;
+    }
+
+    .city {
+        line-height: inherit;
     }
 
     .h3 {
@@ -470,7 +473,7 @@ hr {
     }
 
     .title {
-        font-size: var(--font-size-sm);
+        line-height: var(--line-height-xs);
     }
 
     .h1 {
@@ -482,42 +485,27 @@ hr {
         line-height: inherit;
     }
 
-    .hrodna {
+    /* .hrodna {
         width: 18px;
         height: 18px;
-    }
-
-    .city {
-        font-size: var(--font-size-city-md);
-    }
-
-    .h2 {
-        font-size: var(--font-size-xxs);
-    }
-
-    .tag {
-        font-size: var(--font-size-xxs);
-    }
+    } */
 
     .uni {
-        font-size: var(--font-size-sm);
         line-height: var(--line-height-xs);
     }
 
     .year,
     .subject {
-        font-size: var(--font-size-xs);
         color: var(--fg-color-secondary);
     }
 
     .title-ed {
-        font-size: var(--font-size-sm);
         color: var(--fg-color-primary);
         line-height: var(--line-height-xs);
     }
 
     .link {
-        font-size: var(--font-size-sm);
+        line-height: var(--line-height-xs);
     }
 
     .first-section {

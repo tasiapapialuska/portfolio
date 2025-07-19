@@ -149,7 +149,7 @@ hr {
 .case-item {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
 }
 
 .case-1,
@@ -520,7 +520,7 @@ hr {
     }
 
     .case-item {
-        gap: 4px;
+        gap: 8px;
     }
 
     .footer {

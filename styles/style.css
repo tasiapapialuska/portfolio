@@ -465,14 +465,10 @@ hr {
     }
 
     .city {
-        line-height: inherit;
+        line-height: var(--line-height-sm);
     }
 
     .h3 {
-        line-height: var(--line-height-xss);
-    }
-
-    .title {
         line-height: var(--line-height-xs);
     }
 
@@ -483,6 +479,7 @@ hr {
     .description {
         margin-bottom: 0.875rem;
         line-height: inherit;
+        line-height: var(--line-height-sm);
     }
 
     /* .hrodna {

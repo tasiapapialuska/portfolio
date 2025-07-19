@@ -5,12 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     images.forEach(img => {
         img.addEventListener('click', () => {
-            modal.style.display = 'flex'; // Показываем модальное окно (flex для центрирования)
-            modalImage.src = img.src; // Устанавливаем источник изображения
-            modalImage.alt = img.alt; // Копируем alt-текст
+            modal.style.display = 'flex';
+            modalImage.src = img.src;
+            modalImage.alt = img.alt;
 
-            // Добавляем обработчик для закрытия при клике вне картинки
-            setTimeout(() => { // Небольшая задержка, чтобы клик по картинке не сразу закрыл модалку
+            setTimeout(() => {
                 modal.addEventListener('click', closeModalOutside);
             }, 50);
         });
@@ -21,16 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function closeModal() {
-        modal.classList.add('closing'); // Добавляем класс для анимации закрытия
-        modal.removeEventListener('click', closeModalOutside); // Удаляем обработчик клика вне
+        modal.classList.add('closing');
+        modal.removeEventListener('click', closeModalOutside);
         setTimeout(() => {
             modal.style.display = 'none';
-            modal.classList.remove('closing'); // Удаляем класс после завершения анимации
-        }, 100); // Время должно соответствовать animation-duration в CSS
+            modal.classList.remove('closing');
+        }, 100);
     }
 
     function closeModalOutside(event) {
-        // Если клик был не по самой картинке и не по ее дочерним элементам
         if (event.target === modal) {
             closeModal();
         }

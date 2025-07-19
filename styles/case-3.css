@@ -10,6 +10,7 @@
     --bg-color: #f5f5f5;
     --bg-card: #ededed;
     --hl-color: #C6DDE8;
+    --decoration-color: #133153;
 
     /***** TAG COLORS *****/
     --tag-gray-bg: #e1e1df;
@@ -66,6 +67,7 @@
     --border-radius-md: 12px;
 }
 
+/***** LAYOUT *****/
 * {
     margin: 0;
     padding: 0;
@@ -108,6 +110,11 @@ hr {
     background-color: var(--color-border);
 }
 
+.footer {
+    margin-top: 5rem;
+}
+
+/***** HEADER *****/
 .header {
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
@@ -207,11 +214,17 @@ hr {
     white-space: nowrap;
 }
 
+/***** BASICS *****/
 .h2 {
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
     font-weight: var(--font-weight-semibold);
     margin-bottom: 0.5rem;
+}
+
+.group-name {
+    text-transform: uppercase;
+    font-size: var(--font-size-xs);
 }
 
 .task-1 {
@@ -263,8 +276,12 @@ hr {
     margin-bottom: 16px;
 }
 
-.ul-list,
-ol {
+.list-title {
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.ul-list, .ol-list {
     padding-left: 24px;
 }
 
@@ -276,18 +293,37 @@ ol {
 }
 
 .ol-list-item {
+    padding-left: 2px;
     margin-bottom: 12px;
 }
 
-.list-title {
-    list-style: none;
-    margin-bottom: 2px;
+.btm-margin {
+    margin-bottom: 18px;
 }
 
-::marker {
-    color: var(--fg-color-primary);
+/***** HIGHLIGHTS *****/
+.card {
+    background-color: var(--bg-card);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 24px;
 }
 
+.main-idea p {
+    margin-bottom: 6px;
+}
+
+.main-idea p:first-child {
+    font-weight: var(--font-weight-semibold);
+}
+
+.bg-color {
+    background-color: var(--hl-color);
+    border-radius: 3px;
+    padding: 0px 3px;
+}
+
+/***** IMAGES *****/
 .case-image {
     margin-bottom: 1.5rem
 }
@@ -304,25 +340,7 @@ ol {
     cursor: zoom-in;
 }
 
-.list-style {
-    margin-bottom: 12px;
-}
-
-.bg-color {
-    background-color: var(--hl-color);
-    border-radius: 3px;
-    padding: 0px 3px;
-}
-
-.group-name {
-    text-transform: uppercase;
-    font-size: var(--font-size-xs);
-}
-
-.footer {
-    margin-top: 5rem;
-}
-
+/***** IMAGE ZOOM *****/
 .image-modal {
     display: none;
     position: fixed;
@@ -391,7 +409,7 @@ ol {
     }
 }
 
-/* md-size */
+/* MD-SIZE */
 @media (max-width: 620px) {
     .main {
         padding-top: 1.25rem;
@@ -407,24 +425,24 @@ ol {
 
     .body {
         font-size: var(--font-size-sm);
-        line-height: var(--line-height-base);
+        line-height: var(--line-height-sm);
     }
 
     .h1 {
-        font-size: var(--font-size-sm);
+        font-size: inherit;
         text-align: end;
         line-height: var(--line-height-xss);
     }
 
     .button,
     .arrow {
-        font-size: var(--font-size-sm);
+        font-size: inherit;
         line-height: var(--line-height-xss);
     }
 
     .h2 {
-        font-size: var(--font-size-sm);
-        line-height: var(--line-height-base);
+        font-size: inherit;
+        line-height: inherit;
     }
 
     .group-name {
@@ -432,7 +450,8 @@ ol {
     }
 
     .p-margin-sm {
-        font-size: var(--font-size-sm);
+        font-size: inherit;
+        line-height: inherit;
     }
 
     .caption {

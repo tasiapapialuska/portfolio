@@ -479,6 +479,7 @@ hr {
 
     .description {
         margin-bottom: 0.875rem;
+        line-height: inherit;
     }
 
     .hrodna {

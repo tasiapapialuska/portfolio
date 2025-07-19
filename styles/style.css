@@ -149,7 +149,7 @@ hr {
 .case-item {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
 }
 
 .case-1,
@@ -181,7 +181,7 @@ hr {
 .h3 {
     display: block;
     cursor: pointer;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .arrow {
@@ -470,6 +470,7 @@ hr {
 
     .h3 {
         line-height: var(--line-height-xs);
+        /* margin-bottom: 9px; */
     }
 
     .h1 {
@@ -520,7 +521,7 @@ hr {
     }
 
     .case-item {
-        gap: 8px;
+        gap: 4px;
     }
 
     .footer {

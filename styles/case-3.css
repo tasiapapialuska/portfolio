@@ -271,6 +271,7 @@ hr {
 }
 
 .decoration {
+    font-family: var(--font-family-sans);
     color: var(--fg-color-secondary);
 }
 

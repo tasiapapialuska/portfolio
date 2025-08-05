@@ -2,35 +2,35 @@
 
 :root {
     /***** COLORS *****/
-    --fg-color-primary: #2a2828;
-    --fg-color-secondary: #6F6E69;
-    --fg-color-gray: #7c7c79;
-    --color-border: #CECDC3;
-    --color-case-border: #ebebeb;
-    --bg-color: #f5f5f5;
-    --bg-card: #ededed;
-    --hl-color: #C6DDE8;
-    --decoration-color: #133153;
+    --fg-color-primary: oklch(0.20 0.0016 17.28);
+    --fg-color-secondary: oklch(0.52 0.0078 97.46);
+    --color-border: oklch(0.85 0.0151 102.5);
+    --color-case-border: oklch(0.94 0 0);
+    --bg-color: oklch(0.97 0 0);
+    --bg-card: oklch(0.95 0 0);
+    --hl-color: oklch(0.88 0.0289 228.09);
+    --fg-color-gray: oklch(0.58 0.0045 106.54);
+    --decoration-color: oklch(0.31 0.0711 253.48);
 
-    /***** TAG COLORS *****/
-    --tag-gray-bg: #e1e1df;
-    --tag-gray-fg: #343331;
-    --tag-blue-bg: #C6DDE8;
-    --tag-blue-fg: #133153;
-    --tag-red-bg: #FFCABB;
-    --tag-red-fg: #551b18;
-    --tag-purple-bg: #E2D9E9;
-    --tag-purple-fg: #31234E;
-    --tag-cyan-bg: #BFE8D9;
-    --tag-cyan-fg: #143F3C;
-    --tag-green-bg: #DDE2B2;
-    --tag-green-fg: #313D07;
-    --tag-orange-bg: #FED3AF;
-    --tag-orange-fg: #59290D;
-    --tag-yellow-bg: #F6E2A0;
-    --tag-yellow-fg: #503D02;
-    --tag-magenta-bg: #FCCFDA;
-    --tag-magenta-fg: #4F1B39;
+    --tag-gray-bg: oklch(0.89 0.005 106.45);
+    --tag-blue-bg: oklch(0.89 0.06 228.09);
+    --tag-red-bg: oklch(0.89 0.06 36.36);
+    --tag-purple-bg: oklch(0.89 0.05 310.69);
+    --tag-cyan-bg: oklch(0.89 0.06 171);
+    --tag-green-bg: oklch(0.89 0.06 112.51);
+    --tag-orange-bg: oklch(0.89 0.07 61.72);
+    --tag-yellow-bg: oklch(0.91 0.09 93.23);
+    --tag-magenta-bg: oklch(0.89 0.05 1.83);
+
+    --tag-gray-fg: oklch(0.32 0.005 84.58);
+    --tag-blue-fg: oklch(0.32 0.09 253.48);
+    --tag-red-fg: oklch(0.32 0.09 26.31);
+    --tag-purple-fg: oklch(0.32 0.08 296.46);
+    --tag-cyan-fg: oklch(0.32 0.08 188.78);
+    --tag-green-fg: oklch(0.32 0.08 121.85);
+    --tag-orange-fg: oklch(0.32 0.09 47.52);
+    --tag-yellow-fg: oklch(0.32 0.09 88.38);
+    --tag-magenta-fg: oklch(0.32 0.09 347.6);
 
     /***** FONTS *****/
     --font-family-mono: 'PT Mono', monospace;

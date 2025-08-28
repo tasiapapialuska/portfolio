@@ -95,7 +95,7 @@ section {
     margin-bottom: 40px;
 }
 
-.first-section {
+.first-section, .cases {
     margin-bottom: 64px;
 }
 
@@ -361,7 +361,7 @@ hr {
 }
 
 .footer {
-    margin-top: 5rem;
+    margin-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;

@@ -2,7 +2,7 @@
 
 :root {
     /***** COLORS *****/
-    --fg-color-primary: oklch(0.2774 0.0078 97.46);
+    --fg-color-primary: oklch(0.227 0.0078 97.46);
     --fg-color-secondary: oklch(0.52 0.0078 97.46);
     --color-border: oklch(0.85 0.0151 102.5);
     --color-case-border: oklch(0.94 0 0);
@@ -488,7 +488,7 @@ hr {
     }
 
     .description {
-        margin-bottom: 0.875rem;
+        margin-bottom: 1rem;
         line-height: inherit;
         line-height: var(--line-height-sm);
     }

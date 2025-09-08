@@ -113,7 +113,7 @@ section {
 }
 
 .description {
-    line-height: var(--line-height-base);
+    line-height: var(--line-height-sm);
     margin-bottom: 0.938rem;
 }
 
@@ -489,7 +489,6 @@ hr {
 
     .description {
         margin-bottom: 0.938rem;
-        line-height: inherit;
         line-height: var(--line-height-sm);
     }
 

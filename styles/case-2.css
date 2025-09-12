@@ -87,7 +87,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 690px;
+    max-width: 664px;
     margin: 0 auto;
     min-height: 100vh;
     padding: 0 20px;
@@ -254,7 +254,7 @@ hr {
 }
 
 .ul-list, .ol-list {
-    padding-left: 24px;
+    padding-left: 18px;
 }
 
 .list-item {

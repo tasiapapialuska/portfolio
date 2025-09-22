@@ -470,10 +470,6 @@ hr {
         display: none;
     }
 
-    .cases-container {
-        gap: 40px;
-    }
-
     .city {
         line-height: var(--line-height-sm);
     }

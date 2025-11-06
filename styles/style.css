@@ -3,13 +3,14 @@
 
 :root {
     /***** COLORS *****/
-    --fg-color-primary: oklch(0.22 0.0078 97.46);
+    --fg-color-primary: oklch(0.14 0.0078 97.46);
     --fg-color-secondary: oklch(0.50 0.0078 97.46);
     --color-border: oklch(0.85 0.0151 102.5);
     --color-case-border: oklch(0.94 0 0);
     --bg-color: oklch(0.98 0 0);
     --bg-card: oklch(0.95 0 0);
-    --hl-color: oklch(0.88 0.0289 228.09);
+    --hl-bg-color: oklch(0.88 0.0289 228.09);
+    --hl-fg-color: oklch(0.22 0.0289 228.09);
     --fg-color-gray: oklch(0.58 0.0045 106.54);
     --decoration-color: oklch(0.31 0.0711 253.48);
 
@@ -56,10 +57,9 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
 
-    --line-height-base: 1.563;
-    --line-height-sm: 1.5;
-    --line-height-xs: 1.35;
-    --line-height-xss: 1.25;
+    --line-height-base: 1.5;
+    --line-height-s: 1.35;
+    --line-height-xs: 1.25;
     --line-height-equal: 1;
 
     /***** BORDER RADIUS *****/
@@ -86,7 +86,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 664px;
+    max-width: 640px;
     margin: 0 auto;
     min-height: 100vh;
     padding: 0 20px;
@@ -108,13 +108,13 @@ section {
 .h1 {
     font-family: var(--font-family-mono);
     font-size: var(--font-size-lg);
-    line-height: var(--line-height-xs);
+    line-height: var(--line-height-s);
     font-weight: var(--font-weight-semibold);
     margin-bottom: 0.25rem;
 }
 
 .description {
-    line-height: var(--line-height-sm);
+    line-height: var(--line-height-base);
     margin-bottom: 0.938rem;
 }
 
@@ -221,7 +221,7 @@ hr {
     color: var(--fg-color-primary);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-base);
-    line-height: var(--line-height-xs);
+    line-height: var(--line-height-s);
 }
 
 .span-inline:hover {
@@ -445,7 +445,7 @@ hr {
     color: var(--fg-color-primary);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-base);
-    line-height: var(--line-height-xs);
+    line-height: var(--line-height-s);
     padding-bottom: 0px;
 }
 
@@ -472,11 +472,11 @@ hr {
     }
 
     .city {
-        line-height: var(--line-height-sm);
+        line-height: var(--line-height-base);
     }
 
     .h3 {
-        line-height: var(--line-height-xss);
+        line-height: var(--line-height-xs);
         margin-bottom: 6px;
     }
 
@@ -486,11 +486,11 @@ hr {
 
     .description {
         margin-bottom: 0.938rem;
-        line-height: var(--line-height-sm);
+        line-height: var(--line-height-base);
     }
 
     .uni {
-        line-height: var(--line-height-xs);
+        line-height: var(--line-height-s);
     }
 
     .year,
@@ -500,11 +500,11 @@ hr {
 
     .title-ed {
         color: var(--fg-color-primary);
-        line-height: var(--line-height-xs);
+        line-height: var(--line-height-s);
     }
 
     .link {
-        line-height: var(--line-height-xs);
+        line-height: var(--line-height-s);
     }
 
     .first-section {

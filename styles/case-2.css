@@ -2,13 +2,14 @@
 
 :root {
     /***** COLORS *****/
-    --fg-color-primary: oklch(0.22 0.0078 97.46);
+    --fg-color-primary: oklch(0.14 0.0078 97.46);
     --fg-color-secondary: oklch(0.50 0.0078 97.46);
     --color-border: oklch(0.85 0.0151 102.5);
     --color-case-border: oklch(0.94 0 0);
     --bg-color: oklch(0.98 0 0);
     --bg-card: oklch(0.95 0 0);
-    --hl-color: oklch(0.88 0.0289 228.09);
+    --hl-bg-color: oklch(0.88 0.0289 228.09);
+    --hl-fg-color: oklch(0.22 0.0289 228.09);
     --fg-color-gray: oklch(0.58 0.0045 106.54);
     --decoration-color: oklch(0.31 0.0711 253.48);
 
@@ -55,10 +56,9 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
 
-    --line-height-base: 1.563;
-    --line-height-sm: 1.5;
-    --line-height-xs: 1.35;
-    --line-height-xss: 1.25;
+    --line-height-base: 1.5;
+    --line-height-s: 1.35;
+    --line-height-xs: 1.25;
     --line-height-equal: 1;
 
     /***** BORDER RADIUS *****/
@@ -87,7 +87,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 664px;
+    max-width: 640px;
     margin: 0 auto;
     min-height: 100vh;
     padding: 0 20px;
@@ -128,7 +128,7 @@ hr {
     text-align: center;
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-base);
-    line-height: var(--line-height-xs);
+    line-height: var(--line-height-s);
 }
 
 .button {
@@ -145,7 +145,7 @@ hr {
     display: block;
     cursor: pointer;
     font-size: var(--font-size-base);
-    line-height: var(--line-height-xs);
+    line-height: var(--line-height-s);
 }
 
 .arrow {
@@ -155,7 +155,7 @@ hr {
     color: var(--color-border);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-base);
-    line-height: var(--line-height-xs);
+    line-height: var(--line-height-s);
     transition: color 0.3s ease;
     margin-right: 4px;
 }
@@ -204,7 +204,7 @@ hr {
 .tag {
     font-family: var(--font-family-mono);
     font-size: var(--font-size-xs);
-    line-height: var(--line-height-xs);
+    line-height: var(--line-height-s);
     padding: 2px 6px;
     border-radius: var(--border-radius-xs);
     white-space: nowrap;
@@ -263,7 +263,7 @@ hr {
 
 .caption {
     font-size: var(--font-size-sm);
-    line-height: var(--line-height-sm);
+    line-height: var(--line-height-base);
     margin-bottom: 4px;
     color: var(--fg-color-secondary);
 }
@@ -304,7 +304,8 @@ hr {
 }
 
 .bg-color {
-    background-color: var(--hl-color);
+    background-color: var(--hl-bg-color);
+    color: var(--hl-fg-color);
     border-radius: 3px;
     padding: 0px 2px;
 }
@@ -390,7 +391,7 @@ hr {
     }
 
     .body {
-        line-height: var(--line-height-sm)
+        line-height: var(--line-height-base)
     }
 
     .header {

@@ -1,0 +1,363 @@
+/* =====================
+   CASE PAGE STYLES
+   Подключается поверх style.css
+   ===================== */
+
+
+/* Хедер кейса */
+.case-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.case-back {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.case-back .arrow {
+    color: var(--color-border);
+    transition: color 0.16s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.case-back:hover .arrow {
+    color: var(--fg-color-primary);
+}
+
+.link-back {
+    text-decoration: none;
+    color: var(--fg-color-primary);
+    font-size: var(--font-size-base);
+}
+
+
+.case-title-text {
+    margin-top: 2.5rem;
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-s);
+    color: var(--fg-color-primary);
+    letter-spacing: var(--letter-spacing-m);
+}
+
+/* Контент кейса */
+.case-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-section {
+    width: 100%;
+    max-width: 656px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.case-h2 {
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-xs);
+    margin-bottom: 0.75rem;
+    letter-spacing: var(--letter-spacing-w);
+}
+
+.case-p {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    margin-bottom: 0.75rem;
+    letter-spacing: var(--letter-spacing-w);
+    overflow-wrap: break-word;
+}
+
+.case-p:last-child {
+    margin-bottom: 0;
+}
+
+.case-group {
+    margin-bottom: 1rem;
+}
+
+.case-group-name {
+    display: block;
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--fg-color-secondary);
+    font-family: var(--font-family-sans);
+    margin-bottom: 4px;
+}
+
+/* Списки */
+.case-list {
+    margin-bottom: 1rem;
+}
+
+.case-list-title {
+    /* margin-bottom: 0.5rem; */
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-w);
+}
+
+.case-ul {
+    padding-left: 1.25rem;
+}
+
+.case-ul li {
+    margin-bottom: 4px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-w);
+}
+
+.case-ol {
+    padding-left: 1.05rem;
+    list-style-type: decimal;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-w);
+}
+
+.case-ol-item {
+    margin-bottom: 1.25rem;
+}
+
+.case-ol-title, ::marker {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-w);
+    /* margin-bottom: 4px; */
+}
+
+ul li::marker {
+    content: "—  ";
+    color: var(--fg-color-gray);
+}
+
+/* Изображения */
+.case-image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.case-image .case-image-style {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+    cursor: zoom-in;
+}
+
+.case-image-wrap {
+    position: relative;
+    /* border-radius: var(--border-radius-md); */
+    overflow: hidden;
+}
+
+.case-image-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* border-radius: var(--border-radius-md);
+    border: 1px solid var(--color-case-border); */
+    pointer-events: none;
+    z-index: 2;
+}
+
+.case-caption {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-w);
+    color: var(--fg-color-secondary);
+    padding: 0.75rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+.case-subtitle {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    color: var(--fg-color-secondary);
+}
+
+.case-description {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-regular)
+}
+
+/* Карточки */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: var(--bg-card);
+    padding: 1rem 1.25rem;
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+}
+
+.case-quote {
+    border-left: 1px solid var(--color-border);
+    padding: 0.375rem 0.75rem;
+    margin: 0;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+}
+
+.user {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.main-idea.card {
+    width: auto; 
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.main-idea.card p {
+    margin-bottom: 0.5rem;
+}
+
+.main-idea.card p:last-child {
+    margin-bottom: 0;
+}
+
+.margin-2 {
+    margin-bottom: 2rem;
+}
+
+.margin-4 {
+    margin-bottom: 4rem;
+}
+
+/* Хайлайт */
+.bg-color {
+    background-color: var(--hl-bg-color);
+    color: var(--hl-fg-color);
+    border-radius: 0px;
+    padding: 0px 2px;
+}
+
+/* Зум изображений */
+body.modal-open {
+    overflow: hidden;
+}
+
+.image-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    transition: background-color 450ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-modal.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: auto;
+}
+
+.modal-content {
+    max-width: 80vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    border-radius: var(--border-radius-md);
+    transform-origin: 0 0;
+    will-change: transform, opacity;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal-content.visible {
+    opacity: 1;
+}
+
+/* Мобильный хедер кейса — только на мобильном */
+.mobile-case-header {
+    display: none;
+}
+
+/* =====================
+   MOBILE
+   ===================== */
+@media (max-width: 660px) {
+
+    .case-header {
+        display: none;
+    }
+
+    .mobile-case-header {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    .case-section {
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
+    }
+
+    .case-title-text {
+        margin-top: 1rem;
+    }
+
+    .image-modal {
+        padding: 0;
+    }
+
+    .modal-content {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+    }
+
+    .case-image {
+        width: 100%;
+    }
+
+    .case-caption {
+        width: 100%;
+    }
+
+    .case-image .case-image-style {
+        border-radius: var(--border-radius-xs);
+    }
+
+    .main-idea.card {
+        width: auto; 
+        margin-left: unset;
+        margin-right: unset;
+        padding: 0.75rem 1rem;
+    }
+}

@@ -1,52 +1,73 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.zoomable-image');
-    const modal = document.getElementById('image-modal');
-    const modalImage = document.getElementById('modal-image');
+const modal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-image');
+let lastClickedImg = null;
 
-    images.forEach(img => {
-        img.addEventListener('click', () => {
-            const imageUrl = img.src;
-            const imageAlt = img.alt;
+document.querySelectorAll('.zoomable-image').forEach(img => {
+    img.addEventListener('click', function() {
+        lastClickedImg = this;
+        const first = this.getBoundingClientRect();
 
-            modal.style.display = 'none';
-            modalImage.src = '#';
-            modalImage.alt = '';
+        modalImg.src = this.src;
+        modal.classList.add('active');
+        document.body.classList.add('modal-open');
 
-            const preloader = new Image();
-            preloader.src = imageUrl;
+        requestAnimationFrame(() => {
+            const last = modalImg.getBoundingClientRect();
+            const deltaX = first.left - last.left;
+            const deltaY = first.top - last.top;
+            const deltaW = first.width / last.width;
+            const deltaH = first.height / last.height;
 
-            preloader.onload = () => {
-                modalImage.src = imageUrl;
-                modalImage.alt = imageAlt;
-                modal.style.display = 'flex';
+            modalImg.style.transition = 'none';
+            modalImg.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(${deltaW}, ${deltaH})`;
+            modalImg.style.opacity = '1';
+            
+            lastClickedImg.style.opacity = '0';
 
-                modal.addEventListener('click', closeModalOutside);
-            };
-
-            preloader.onerror = () => {
-                console.error('Ошибка загрузки изображения:', imageUrl);
-            };
+            requestAnimationFrame(() => {
+                modalImg.style.transition = 'transform 450ms cubic-bezier(0.16, 1, 0.3, 1), opacity 300ms ease-out';
+                modalImg.style.transform = 'none';
+            });
         });
     });
+});
 
-    function closeModal() {
-        setTimeout(() => {
-            modal.style.display = 'none';
-            modalImage.src = '#';
-            modalImage.alt = '';
-            modal.removeEventListener('click', closeModalOutside);
-        }, 0);
-    }
+modal.addEventListener('click', () => {
+    if (!lastClickedImg) return;
 
-    function closeModalOutside(event) {
-        if (event.target === modal) {
-            closeModal();
+    const first = modalImg.getBoundingClientRect();
+    const last = lastClickedImg.getBoundingClientRect();
+
+    const deltaX = last.left - first.left;
+    const deltaY = last.top - first.top;
+    const deltaW = last.width / first.width;
+    const deltaH = last.height / first.height;
+
+    const duration = 450; 
+    const easing = 'cubic-bezier(0.16, 1, 0.3, 1)';
+
+    modal.classList.remove('active');
+
+    modalImg.style.transition = `transform ${duration}ms ${easing}, opacity ${duration}ms ease-in-out`;
+    modalImg.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(${deltaW}, ${deltaH})`;
+
+    setTimeout(() => {
+        if (lastClickedImg) {
+            lastClickedImg.style.opacity = '1';
         }
-    }
+    }, duration * 0.3);
 
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && modal.style.display === 'flex') {
-            closeModal();
-        }
-    });
+    setTimeout(() => {
+        modalImg.style.opacity = '0';
+        modalImg.style.transform = 'none';
+        modalImg.style.transition = 'none';
+        document.body.classList.remove('modal-open');
+        lastClickedImg = null;
+    }, duration); 
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        modal.click();
+    }
 });

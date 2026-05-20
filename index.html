@@ -6,13 +6,18 @@
     <meta name="author" content="Tasia Papialushka">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Тася Попелушко</title>
+    <title>Тася Попелушко — дизайнер пользовательских интерфейсов</title>
     <meta name="description" content="Привет, я Тася! Я увлечена созданием интерфейсов, в которых легко разобраться и приятно находиться. Учусь, исследую и пробую на практике, как разрабатывать по-настоящему классный цифровой опыт ⊹˙₊">
-    <link rel="icon" href="img/favicon.svg" type="image/x-icon" sizes="512x512">
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/img/site.webmanifest" />
     <link rel="stylesheet" href="styles/style.css">
 
     <meta property="og:title" content="Тася Попелушко">
-    <meta property="og:description" content="Дизайнер пользовательских интерфейсов">
+    <meta property="og:description" content="Продуктовый дизайнер">
     <meta property="og:image" content="https://tasiapapialuska.github.io/portfolio/img/cover.png">
     <meta property="og:url" content="https://tasiapapialuska.github.io/portfolio/">
     <meta property="og:type" content="website">
@@ -25,168 +30,245 @@
 </head>
 
 <body class="body">
-    <div class="container">
-        <main class="main">
-            <section class="first-section">
-                <h1 class="h1">Тася Попелушко &mdash; дизайнер интерфейсов</h1>
-                <p class="description">Я создаю интерфейсы, в которых легко разобраться и приятно находиться. <br>Учусь, исследую и пробую на практике, как разрабатывать по-настоящему хороший цифровой опыт ⊹˙₊ </p>
-                <div class="location">
-                    <img class="hrodna" src="img/hrodna.webp" alt="Фотография Фарного костёла в Гродно" height="20"
-                        width="20">
-                    <span class="city">Гродно, Беларусь</span>
-                </div>
-            </section>
+    <header class="mobile-nav">
+        <a href="#" class="mobile-logo">
+            <img src="img/icon.svg" alt="" height="24" width="24">
+        </a>
+        <button class="mobile-info-btn" id="infoBtn">Инфо</button>
+    </header>
 
-            <section class="cases">
-                <h2 class="h2 margin-14">Кейсы</h2>
-                <div class="cases-container">
-                    <div class="case-item">
-                        <img class="case-1 case-image-style" src="img/case-1.webp"
-                            alt="Мобильное приложение с картой, отображающей маршрут общественного транспорта и текущее положение."
-                            height="2160" width="2160">
-                        <h3 class="h3"><span class="span-inline"><a class="title"
-                                    href="https://www.behance.net/gallery/226435587/Rukh-Public-Transport-Navigation-Schedules"
-                                    target="_blank">Rukh &mdash; маршруты и расписание общественного транспорта</a></span><span
-                                class="arrow">↗</span></h3>
-                        <div class="tags">
-                            <div class="main-tags">
-                                <div class="tag green">Android</div>
-                                <div class="tag blue">Behance</div>
-                            </div>
-                            <div class="languages">
-                                <div class="tag gray">En</div>
-                                <div class="tag gray">Be</div>
-                            </div>
+    <div class="mobile-info-panel" id="infoPanel">
+        <div class="mobile-info-header">
+            <a href="#" class="mobile-logo">
+                <img src="img/icon.svg" alt="" height="24" width="24">
+            </a>
+            <button class="mobile-info-close" id="infoClose">(Закрыть)</button>
+        </div>
+        <div class="mobile-info-content">
+            <section class="profile-section">
+                        <div class="logo">
+                            <a href="#">
+                                <img class="mypic" src="img/icon.svg" alt="Smile face" height="24" width="24">
+                            </a>
                         </div>
-                    </div>
+                        <h1 class="h1">Тася Попелушко</h1>
+                        <p class="subtitle">Дизайнер пользовательских интерфейсов</p>
+                        
+                        <div class="bio">
+                            <p class="description">Мне нравится разбираться в сложных системах и проектировать сценарии, где технологии становятся понятными и человечными. Верю, что хороший интерфейс — это баланс между строгой логикой и приятным ощущением от взаимодействия.</p>
+                            <p class="description">В свободное время изучаю код, углубляюсь в социальные науки и ищу редкую музыку.</p>
+                        </div>
 
-                    <div class="case-item">
-                        <img class="case-2 case-image-style" src="img/case-2.webp"
-                            alt="Три экрана мобильного приложения: первый показывает баланс счета и последние операции; второй — всплывающее меню «Другие функции» с опцией «Персонализированный банкомат»; третий — страницу «Персонализированный банкомат» с изображением банкомата и списком преимуществ."
-                            height="2160" width="2160">
-                        <h3 class="h3"><span class="span-inline"><a class="title" href="case-atm-ux-redesign.html">Совершенствование пользовательского опыта банкомата</a></span></h3>
-                        <div class="tags">
-                            <div class="main-tags">
-                                <div class="tag cyan">IOS</div>
-                            </div>
-                            <div class="languages">
-                                <div class="tag gray">Ru</div>
-                            </div>
+                        <div class="location">
+                            <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" height="18" width="18">
+                            <span class="city">Гродно, Беларусь</span>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="case-item">
-                        <div class="case-3-images">
-                            <img class="case-3 case-image-style" src="img/case-3-1.webp"
-                                alt="Мобильный телефон с навигационным приложением, показывающим маршрут такси." height="2160" width="1892">
-                            <img class="case-3 case-image-style" src="img/case-3-2.webp"
-                                alt="Фрагмент веб-страницы с заголовком «Превратите поездку в прибыльный маршрут» рядом с изображением человека в автомобиле." height="2160" width="1892">
+                    <section class="sidebar-section">
+                        <h2 class="h2">Опыт работы</h2>
+                        <div class="entry">
+                            <span class="entry-name">Grinny.ai</span>
+                            <span class="entry-date">ноябрь 2025 — май 2026</span>
                         </div>
-                        <h3 class="h3"><span class="span-inline"><a class="title" href="cab-new-format.html">Новый формат работы в такси</a></span></h3>
-                        <div class="tags">
-                            <div class="main-tags">
-                                <div class="tag cyan">IOS</div>
-                                <div class="tag purple">Web</div>
+                    </section>
+
+                    <section class="sidebar-section">
+                        <h2 class="h2">Образование</h2>
+                        <div class="entry-group">
+                            <p class="entry-org">Гродненский государственный университет им. Я. Купалы</p>
+                            <div class="entry">
+                                <span class="entry-sub">Магистратура, социология</span>
+                                <span class="entry-date">2022 — 2023</span>
                             </div>
-                            <div class="languages">
-                                <div class="tag gray">Ru</div>
+                            <div class="entry">
+                                <span class="entry-sub">Бакалавриат, социология</span>
+                                <span class="entry-date">2018 — 2022</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
+                    </section>
 
-            <section class="education">
-                <h2 class="h2">Образование</h2>
-                <div class="education-item">
-                    <h3 class="uni">Гродненский государственный университет им. Я. Купалы</h3>
-                    <div class="subjects">
-                        <div class="subject-container margin-0">
-                            <p class="subject">Магистратура, социология</p>
-                            <p class="year">2022 &mdash; 2023</p>
+                    <section class="sidebar-section">
+                        <h2 class="h2">Дополнительное образование</h2>
+                        <div class="entry">
+                            <span class="entry-org">EPAM Designer's Workbook: self-paced course</span>
+                            <span class="entry-date">2024</span>
                         </div>
-                        <div class="subject-container">
-                            <p class="subject">Бакалавриат, социология</p>
-                            <p class="year">2018 &mdash; 2022</p>
+                    </section>
+
+                    <section class="sidebar-section no-margin" id="links">
+                        <h2 class="h2">Ссылки</h2>
+                        <nav class="links">
+                            <span class="span-inline"><a class="link" href="mailto:papialuskatasia@proton.me">Email</a></span>
+                            <span class="span-inline"><a class="link" href="https://www.behance.net/tasiapapialuska" target="_blank">Behance</a></span>
+                            <span class="span-inline"><a class="link" href="https://dribbble.com/tpapialuska" target="_blank">Dribbble</a></span>
+                            <span class="span-inline"><a class="link" href="http://www.linkedin.com/in/tasiapapialuska" target="_blank">Linkedin</a></span>
+                            <span class="span-inline"><a class="link" href="https://drive.google.com/file/d/1wYsNKQgmoXDm-Ifi-SVeh55tp8QP_5Cs/view?usp=sharing" target="_blank">CV</a></span>
+                        </nav>
+                    </section>
+        </div>
+    </div>
+
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+                <div class="sidebar-sticky-content">
+                    
+                    <section class="profile-section">
+                        <div class="logo">
+                            <a href="#">
+                                <img class="mypic" src="img/icon.svg" alt="Smile face" height="24" width="24">
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </section>
+                        <h1 class="h1">Тася Попелушко</h1>
+                        <p class="subtitle">Дизайнер пользовательских интерфейсов</p>
+                        
+                        <div class="bio">
+                            <p class="description">Мне нравится разбираться в сложных системах и проектировать сценарии, где технологии становятся понятными и человечными. Верю, что хороший интерфейс — это баланс между строгой логикой и приятным ощущением от взаимодействия.</p>
+                            <p class="description">В свободное время изучаю код, углубляюсь в социальные науки и ищу редкую музыку.</p>
+                        </div>
 
-            <section class="additional-education">
-                <h2 class="h2">Дополнительное образование</h2>
-                <div class="education-item">
-                    <div class="subject-container">
-                        <p class="subject title-ed">EPAM Designer's Workbook: self-paced course</p>
-                        <p class="year">июнь 2023 &mdash; декабрь 2024</p>
-                    </div>
-                    <div class="subject-container">
-                        <p class="subject title-ed">Social Camp</p>
-                        <p class="year">2022 &mdash; 2023</p>
-                    </div>
-                    <div class="subject-container">
-                        <p class="subject title-ed">Youth SuperPower 2.0</p>
-                        <p class="year">октябрь &mdash; ноябрь 2022</p>
-                    </div>
-                    <div class="subject-container">
-                        <p class="subject title-ed">Школа молодых реформаторов</p>
-                        <p class="year">август &mdash; сентябрь 2022</p>
-                    </div>
-                    <div class="subject-container">
-                        <p class="subject title-ed">Belarus Urban Fellowship 2022</p>
-                        <p class="year">июль 2022</p>
-                    </div>
-                </div>
-            </section>
+                        <div class="location">
+                            <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" height="18" width="18">
+                            <span class="city">Гродно, Беларусь</span>
+                        </div>
+                    </section>
 
-            <section class="links">
-                <h2 class="h2">Ссылки</h2>
-                <div class="links">
-                    <span class="span-inline"><a class="link" href="mailto:papialuskatasia@proton.me" target="_blank">Email</a></span>
-                    <span class="span-inline"><a class="link" href="https://www.behance.net/tasiapapialuska" target="_blank">Behance</a></span>
-                    <span class="span-inline"><a class="link" href="https://dribbble.com/tpapialuska" target="_blank">Dribbble</a></span>
-                    <span class="span-inline"><a class="link" href="http://www.linkedin.com/in/tasiapapialuska" target="_blank">Linkedin</a></span>
-                    <span class="span-inline"><a class="link" href="https://drive.google.com/file/d/1wYsNKQgmoXDm-Ifi-SVeh55tp8QP_5Cs/view?usp=sharing" target="_blank">CV</a></span>
-                </div>
-            </section>
+                    <section class="sidebar-section">
+                        <h2 class="h2">Опыт работы</h2>
+                        <div class="entry">
+                            <span class="entry-name">Grinny.ai</span>
+                            <span class="entry-date">ноябрь 2025 — май 2026</span>
+                        </div>
+                    </section>
 
-            <footer class="footer">
-                <div class="color-squares-container">
-                    <svg alt="Yellow square" class="footer-square square-yellow-ft" width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg"> 
-                        <rect width="230" height="230" fill="oklch(0.68 0.14 86.78)"/> 
-                    </svg>
-                
-                    <svg alt="Cyan square" class="footer-square square-cyan-ft" width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="230" height="230" transform="matrix(1 0 0 -1 0 230)" fill="oklch(0.55 0.14 186.74)"/>
-                    </svg>
-                    
-                    <svg alt="Magenta square" class="footer-square square-magenta-ft" width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="230" height="230" transform="matrix(1 0 0 -1 0 230)" fill="oklch(0.55 0.16 349.76)"/>
-                    </svg>
-                    
-                    <svg alt="Violet square" class="footer-square square-violet-ft" width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="230" height="230" transform="matrix(1 0 0 -1 0 230)" fill="oklch(0.52 0.14 294.83)"/>
-                    </svg>
-                    
-                    <svg alt="Green square" class="footer-square square-green-ft" width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="230" height="230" transform="matrix(1 0 0 -1 0 230)" fill="oklch(0.60 0.14 121.21)"/>
-                    </svg>
-                    
-                    <svg alt="Blue square" class="footer-square square-blue-ft" width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="230" height="230" fill="oklch(0.52 0.12 254.58)"/>
-                    </svg>
-                    
-                    <svg alt="Red square" class="footer-square square-red-ft" width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="230" height="230" fill="oklch(0.55 0.16 27.88)"/>
-                    </svg>
-                    
-                    <svg alt="Orange square" class="footer-square square-orange-ft" width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="230" height="230" fill="oklch(0.62 0.14 47.37)"/>
-                    </svg>
+                    <section class="sidebar-section">
+                        <h2 class="h2">Образование</h2>
+                        <div class="entry-group">
+                            <p class="entry-org">Гродненский государственный университет им. Я. Купалы</p>
+                            <div class="entry">
+                                <span class="entry-sub">Магистратура, социология</span>
+                                <span class="entry-date">2022 — 2023</span>
+                            </div>
+                            <div class="entry">
+                                <span class="entry-sub">Бакалавриат, социология</span>
+                                <span class="entry-date">2018 — 2022</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sidebar-section">
+                        <h2 class="h2">Дополнительное образование</h2>
+                        <div class="entry">
+                            <span class="entry-org">EPAM Designer's Workbook: self-paced course</span>
+                            <span class="entry-date">2024</span>
+                        </div>
+                    </section>
+
+                    <section class="sidebar-section no-margin" id="links">
+                        <h2 class="h2">Ссылки</h2>
+                        <nav class="links">
+                            <span class="span-inline"><a class="link" href="mailto:papialuskatasia@proton.me">Email</a></span>
+                            <span class="span-inline"><a class="link" href="https://www.behance.net/tasiapapialuska" target="_blank">Behance</a></span>
+                            <span class="span-inline"><a class="link" href="https://dribbble.com/tpapialuska" target="_blank">Dribbble</a></span>
+                            <span class="span-inline"><a class="link" href="http://www.linkedin.com/in/tasiapapialuska" target="_blank">Linkedin</a></span>
+                            <span class="span-inline"><a class="link" href="https://drive.google.com/file/d/1wYsNKQgmoXDm-Ifi-SVeh55tp8QP_5Cs/view?usp=sharing" target="_blank">CV</a></span>
+                        </nav>
+                    </section>
                 </div>
-            </footer>
+            </aside>
+
+        <main class="main-grid scroll-container">
+                <div class="main-container-inner">
+
+                    <div class="mobile-identity">
+                        <h1 class="h1">Тася Попелушко</h1>
+                        <p class="subtitle">Дизайнер пользовательских интерфейсов</p>
+                    </div>
+
+                    <section class="cases">
+                        <div class="cases-container">
+
+                            <div class="case-item">
+                                <div class="case-title">
+                                    <div class="case-title-container">
+                                        <h3 class="h3">
+                                            <span class="span-inline"><a class="title" href="grinny-case.html">Grinny.ai</a></span>
+                                        </h3>
+                                        <span class="case-subtitle">
+                                            · ИИ-агрегатор
+                                        </span>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag blue">Продукт</span>
+                                        <span class="tag green">Веб</span>
+                                    </div>
+                                </div>
+                                <div class="case-grinny-images">
+                                    <img class="case-taxi case-image-style" src="img/case-grinny-1.png" alt="Grinny interface" height="2160" width="1892">
+                                    <img class="case-taxi case-image-style" src="img/case-grinny-2.png" alt="Grinny landing page" height="2160" width="1892">
+                                </div>
+                            </div>
+
+                            <!-- <hr class="hr-cases"> -->
+                                            
+                            <div class="case-item">
+                                <div class="case-title">
+                                    <div class="case-title-container">
+                                        <h3 class="h3">
+                                            <span class="span-inline"><a class="title" href="https://www.behance.net/gallery/226435587/Rukh-Public-Transport-Navigation-Schedules" target="_blank">Rukh &mdash; маршруты и расписание общественного транспорта</a></span><span class="arrow">↗</span>
+                                        </h3>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag purple">Мобильный</span>
+                                    </div>
+                                </div>
+                                <img class="case-rukh case-image-style" src="img/case-rukh.png" alt="Rukh Project" height="2160" width="2160">
+                            </div>
+
+                            <!-- <hr class="hr-cases"> -->
+
+                            <div class="case-item">
+                                <div class="case-title">
+                                    <div class="case-title-container">
+                                        <h3 class="h3">
+                                            <span class="span-inline"><a class="title" href="ai-version-case-atm-ux-redesign.html">Совершенствование пользовательского опыта банкомата</a></span>
+                                        </h3>
+                                    </div>
+                                    <div class="tags">
+                                        <span class="tag purple">Мобильный</span>
+                                    </div>
+                                </div>
+                                <img class="case-atm case-image-style" src="img/case-atm.png" alt="ATM UX Redesign" height="2160" width="2160">
+                            </div>
+
+                            <!-- <hr class="hr-cases"> -->
+
+                            <div class="case-item">
+                                <div class="case-title">
+                                    <div class="case-title-container">
+                                        <h3 class="h3">
+                                            <span class="span-inline"><a class="title" href="cab-new-format.html">Новый формат работы в такси</a></span>
+                                        </h3>
+                                    </div>
+                                <div class="tags">
+                                        <span class="tag purple">Мобильный</span>
+                                        <span class="tag green">Веб</span>
+                                    </div>
+                                </div>
+                                <div class="case-taxi-images">
+                                    <img class="case-taxi case-image-style" src="img/case-taxi-1.png" alt="Taxi App 1" height="2160" width="1892">
+                                    <img class="case-taxi case-image-style" src="img/case-taxi-2.png" alt="Taxi App 2" height="2160" width="1892">
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
         </main>
     </div>
-</body>
 
+    <script src="script/selection.js"></script>
+    <script src="script/menu.js"></script>
+
+</body>
 </html>

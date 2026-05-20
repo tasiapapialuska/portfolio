@@ -6,11 +6,17 @@
     <meta name="author" content="Tasia Papialushka">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Тася Попелушко</title>
+    <title>Новый формат работы в такси — Тася Попелушко</title>
     <meta name="description" content="Привет,  я Тася! Я увлечена созданием интерфейсов, в которых легко разобраться и приятно находиться. Учусь, исследую и пробую на практике, как разрабатывать по-настоящему классный цифровой опыт ⊹˙₊">
-    <link rel="icon" href="img/favicon.svg" type="image/x-icon" sizes="512x512">
-    <link rel="stylesheet" href="styles/case-3.css">
-
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/img/site.webmanifest" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cab-case.css">
+    
     <meta property="og:title" content="Тася Попелушко">
     <meta property="og:description" content="Дизайнер пользовательских интерфейсов">
     <meta property="og:image" content="https://tasiapapialuska.github.io/portfolio/img/cover.webp">
@@ -25,7 +31,377 @@
 </head>
 
 <body class="body">
-    <div class="container">
+
+    <header class="mobile-nav">
+        <a href="index.html" class="mobile-logo">
+            <img src="img/icon.svg" alt="" height="24" width="24">
+        </a>
+        <button class="mobile-info-btn" id="infoBtn">Инфо</button>
+    </header>
+
+    <div class="mobile-info-panel" id="infoPanel">
+        <div class="mobile-info-header">
+            <a href="index.html" class="mobile-logo">
+                <img src="img/icon.svg" alt="" height="24" width="24">
+            </a>
+            <button class="mobile-info-close" id="infoClose">Закрыть</button>
+        </div>
+        <div class="mobile-info-content">
+            <section class="profile-section">
+                <div class="logo"><a href="#"><img class="mypic" src="img/icon.svg" alt="Smile face" height="24" width="24"></a></div>
+                <h1 class="h1">Тася Попелушко</h1>
+                <p class="subtitle">Дизайнер пользовательских интерфейсов</p>
+                <div class="bio">
+                    <p class="description">Мне нравится разбираться в сложных системах и проектировать сценарии, где технологии становятся понятными и человечными. Верю, что хороший интерфейс — это баланс между строгой логикой и приятным ощущением от взаимодействия.</p>
+                    <p class="description">В свободное время изучаю код, углубляюсь в социальные науки и ищу редкую музыку.</p>
+                </div>
+                <div class="location">
+                    <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" height="18" width="18">
+                    <span class="city">Гродно, Беларусь</span>
+                </div>
+            </section>
+            <section class="sidebar-section">
+                <h2 class="h2">Опыт работы</h2>
+                <div class="entry">
+                    <span class="entry-name">Grinny.ai</span>
+                    <span class="entry-date">11/2025 — 05/2026</span>
+                </div>
+            </section>
+            <section class="sidebar-section">
+                <h2 class="h2">Образование</h2>
+                <div class="entry-group">
+                    <p class="entry-org">Гродненский государственный университет им. Я. Купалы</p>
+                    <div class="entry">
+                        <span class="entry-sub">Магистратура, социология</span>
+                        <span class="entry-date">2022 — 2023</span>
+                    </div>
+                    <div class="entry">
+                        <span class="entry-sub">Бакалавриат, социология</span>
+                        <span class="entry-date">2018 — 2022</span>
+                    </div>
+                </div>
+            </section>
+            <section class="sidebar-section">
+                <h2 class="h2">Дополнительное образование</h2>
+                <div class="entry">
+                    <span class="entry-org">EPAM Designer's Workbook: self-paced course</span>
+                    <span class="entry-date">2024</span>
+                </div>
+            </section>
+            <section class="sidebar-section no-margin" id="links">
+                <h2 class="h2">Ссылки</h2>
+                <nav class="links">
+                    <span class="span-inline"><a class="link" href="mailto:papialuskatasia@proton.me">Email</a></span>
+                    <span class="span-inline"><a class="link" href="https://www.behance.net/tasiapapialuska" target="_blank">Behance</a></span>
+                    <span class="span-inline"><a class="link" href="https://dribbble.com/tpapialuska" target="_blank">Dribbble</a></span>
+                    <span class="span-inline"><a class="link" href="http://www.linkedin.com/in/tasiapapialuska" target="_blank">Linkedin</a></span>
+                    <span class="span-inline"><a class="link" href="https://drive.google.com/file/d/1wYsNKQgmoXDm-Ifi-SVeh55tp8QP_5Cs/view?usp=sharing" target="_blank">CV</a></span>
+                </nav>
+            </section>
+        </div>
+    </div>
+
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-sticky-content">
+                <section class="profile-section">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="mypic" src="img/icon.svg" alt="Smile face" height="24" width="24">
+                        </a>
+                    </div>
+                    <h1 class="h1">Тася Попелушко</h1>
+                    <p class="subtitle">Дизайнер пользовательских интерфейсов</p>
+                    <div class="bio">
+                        <p class="description">Мне нравится разбираться в сложных системах и проектировать сценарии, где технологии становятся понятными и человечными. Верю, что хороший интерфейс — это баланс между строгой логикой и приятным ощущением от взаимодействия.</p>
+                        <p class="description">В свободное время изучаю код, углубляюсь в социальные науки и ищу редкую музыку.</p>
+                    </div>
+                    <div class="location">
+                        <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" height="18" width="18">
+                        <span class="city">Гродно, Беларусь</span>
+                    </div>
+                </section>
+                <section class="sidebar-section">
+                    <h2 class="h2">Опыт работы</h2>
+                    <div class="entry">
+                        <span class="entry-name">Grinny.ai</span>
+                        <span class="entry-date">11/2025 — 05/2026</span>
+                    </div>
+                </section>
+                <section class="sidebar-section">
+                    <h2 class="h2">Образование</h2>
+                    <div class="entry-group">
+                        <p class="entry-org">Гродненский государственный университет им. Я. Купалы</p>
+                        <div class="entry">
+                            <span class="entry-sub">Магистратура, социология</span>
+                            <span class="entry-date">2022 — 2023</span>
+                        </div>
+                        <div class="entry">
+                            <span class="entry-sub">Бакалавриат, социология</span>
+                            <span class="entry-date">2018 — 2022</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="sidebar-section">
+                    <h2 class="h2">Дополнительное образование</h2>
+                    <div class="entry">
+                        <span class="entry-org">EPAM Designer's Workbook: self-paced course</span>
+                        <span class="entry-date">2024</span>
+                    </div>
+                </section>
+                <section class="sidebar-section no-margin" id="links">
+                    <h2 class="h2">Ссылки</h2>
+                    <nav class="links">
+                        <span class="span-inline"><a class="link" href="mailto:papialuskatasia@proton.me">Email</a></span>
+                        <span class="span-inline"><a class="link" href="https://www.behance.net/tasiapapialuska" target="_blank">Behance</a></span>
+                        <span class="span-inline"><a class="link" href="https://dribbble.com/tpapialuska" target="_blank">Dribbble</a></span>
+                        <span class="span-inline"><a class="link" href="http://www.linkedin.com/in/tasiapapialuska" target="_blank">Linkedin</a></span>
+                        <span class="span-inline"><a class="link" href="https://drive.google.com/file/d/1wYsNKQgmoXDm-Ifi-SVeh55tp8QP_5Cs/view?usp=sharing" target="_blank">CV</a></span>
+                    </nav>
+                </section>
+            </div>
+        </aside>
+
+        <main class="main-grid scroll-container">
+            <div class="main-container-inner">
+
+                <!-- Мобильный хедер кейса -->
+                <!-- <div class="mobile-case-header">
+                    <div class="case-back">
+                        <span class="arrow">←</span><span class="span-inline"><a class="link-back" href="index.html">назад</a></span>
+                    </div>
+                </div> -->
+
+                <div class="case-content">
+                    <section class="case-section">
+                       <div class="case-title">
+                            <h2 class="case-title-text">Новый формат работы в такси</h2>
+                        </div> 
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Контекст</h3>
+                        <p class="case-p">Компания Marshrutka реализовала в России сервис, в котором водители такси могут встраиваться в маршруты городского транспорта и тем самым закрывать потребность горожан в поездках. Мест в машине мало, стоимость выше, и оплачивать поездку нужно через приложение, а не проездным билетом. Цена зависит от того, сколько «остановок» ты проедешь. Водители могут выходить на маршрут с любой остановки, но должны сделать полный круг маршрута. Таких «кругов» может быть сколько угодно.</p>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Задача</h3>
+                        <ul class="case-ul">
+                                <li>Сделайте дизайн экрана приложения водителя во время поездки (максимально реалистичный по содержанию), покажите разные состояния, если такие потребуются. Продумайте самостоятельно, какие здесь могут быть ограничения и особенности по сравнению с обычной поездкой на такси или автобусе.</li>
+                                <li>Сделайте дизайн-концепцию сайта для приложения из первой задачи в виде двух экранов главной страницы. Ваша аудитория — водители такси. Необходимо убедить их, что использовать этот сервис интереснее, чем просто ждать новых заказов, наматывая круги по городу.</li>
+                            </ul>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Обзор</h3>
+                        <p class="case-p">Текущая городская транспортная система не всегда эффективно покрывает все маршруты пассажиров, оставляя пробелы в доступности и качестве услуг, особенно для тех, кто ищет более гибкие и комфортные решения, чем традиционный общественный транспорт, но при этом более доступные, чем обычное такси. Кроме того, водители такси часто сталкиваются с простоями и неэффективным использованием своего времени и ресурсов.</p>
+                        <p class="case-p">Сервис Marshrutka призван решить эти проблемы, предлагая инновационный гибрид традиционных такси и городского общественного транспорта. Это не только позволяет горожанам комфортно и быстро добираться до нужных мест, эффективно закрывая пробелы в транспортной сети, но и обеспечивает водителям такси стабильный и предсказуемый доход за счёт фиксированных маршрутов, а также эффективное использование времени и топлива. </p>
+                        <p class="case-p">Такое решение улучшает городскую мобильность, разгружает существующие виды транспорта, положительно влияет на экономику города за счёт повышения экономической активности и, в конечном итоге, создает значительную бизнес-возможность для компании Marshrutka, позволяя ей масштабироваться, оптимизировать операции и увеличить доходы благодаря уникальному предложению на стыке рынков.</p>
+                    </section>
+             
+                    <section class="case-section">
+                        <h3 class="case-h2">Определение аудитории</h3>
+                        <div class="case-group">
+                            <span class="case-group-name">Постоянные водители</span>
+                            <p class="case-p">Для них такси — это основной источник дохода. Они ищут стабильность, предсказуемость и оптимизацию рабочего процесса для максимизации прибыли.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Водители на подработке</span>
+                            <p class="case-p">Используют такси для дополнительного дохода в свободное время. Для них важным фактором является гибкость графика.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Водители, которые ищут альтернативу</span>
+                            <p class="case-p">Недовольны условиями работы в текущих такси-агрегаторах (высокие комиссии, неоптимальные заказы, отсутствие прозрачности). Ищут более выгодные и комфортные условия сотрудничества.</p>
+                        </div>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Понимание контекста</h3>
+                        <p class="case-p">Пользовательских интервью не проводилось из-за стартап-режима и сжатых сроков. Исследование строилось на анализе конкурентов, сегментации аудитории и продуктовых гипотезах.</p>
+
+                        <div class="case-list">
+                            <p class="case-list-title">Где они физически находятся?</p>
+                            <ul class="case-ul">
+                                <li>на дорогах города, в трафике,</li>
+                                <li>на стоянках такси или в ожидании заказов,</li>
+                                <li>начальные и конечные точки маршрутов общественного транспорта,</li>
+                                <li>внутри своего автомобиля (основное рабочее место).</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-list">
+                            <p class="case-list-title">Какое триггерное событие вызывает эту потребность?</p>
+                            <ul class="case-ul">
+                                <li>желание увеличить заработок или стабилизировать доход,</li>
+                                <li>простои,</li>
+                                <li>поиск более эффективных способов использования топлива и времени,</li>
+                                <li>недовольство текущими условиями работы (например, комиссии агрегаторов, непредсказуемость заказов),</li>
+                                <li>желание максимально использовать «обратный» путь перед завершением смены.</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-list">
+                            <p class="case-list-title">Сколько времени у них есть?</p>
+                            <ul class="case-ul">
+                                <li>Обычно водители такси работают в гибком графике, самостоятельно управляя своим временем. Им нужно решение, которое позволит им эффективно использовать как короткие промежутки времени, так и длительные смены.</li>
+                                <li>Время, затрачиваемое на «холостые» пробеги или ожидание заказа, является для них потерянным временем.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Потребности аудитории</h3>
+                        <div class="list">
+                            <p class="case-p">Высокоуровневая мотивация <span class="decoration">→</span> <span class="bg-color">максимальное использование рабочего времени и получение стабильного дохода</span></p>
+                            <p class="case-list-title">Этого они могут достичь с помощью:</p>
+                            <ul class="case-ul">
+                                <li>стабильного потока пассажиров и предсказуемого маршрута,</li>
+                                <li>оптимизации маршрутов и расхода топлива,</li>
+                                <li>прозрачности и контроля над заработком,</li>
+                                <li>гибкости в работе.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2 margin-1">Дизайн-решение</h3>
+                        <div class="main-idea card">
+                            <p class="case-h2">Сценарий</p>
+                            <p class="case-p">Водитель подъезжает к остановке. В машине едет 3 пассажира, двое из них выходят на этой остановке, один пассажир продолжает поездку, а в свою очередь ещё 2 человека ожидают поездку.</p>
+                        </div>
+                    </section>
+
+                    <figure class="case-image">
+                        <div class="case-image-wrap">
+                            <img class="case-image-style zoomable-image" src="img/case-2/image-1.png" alt="Написать alt-текст" width="5328" height="3996">
+                        </div>
+                        <!-- <figcaption class="case-caption">Для доработки пользователь вызывает спецализированного агента</figcaption> -->
+                    </figure>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Реализация</h3>
+                        <p class="case-p">На подъезде к остановке у водителя активируется кнопка «На остановке». После её нажатия пассажирам, которые ждут машину, приходит пуш-сообщение о том, что водитель на месте и их ожидает. До этого пользователи заказали через приложение «маршрутку», а сервис распределил их в порядке очерёдности заказа на случай, если пассажиров будет больше, чем мест в машине. Приоритет отдаётся тому, кто заказал раньше.</p>
+                        <p class="case-p">После этого активируется возможность завершить поездку для текущих пассажиров. В нашем сценарии на этой остановке свою поездку завершают 2 пассажира.</p>
+                        <p class="case-p">Запускается таймер, чтобы водитель следил за временем отведённым на высадку и посадку пассажиров.</p>
+                        <p class="case-p">Он видит информацию про пассажиров: того, кого высаживает; тех, кто ещё ожидает высадки; ожидающих на остановке; и тех, кто ещё в пути.</p>
+                        <p class="case-p">Водитель завершает поездку слайдером, чтобы избежать случайных нажатий и прокликиваний сразу всех пассажиров.</p>
+                    </section>
+
+                    <figure class="case-image">
+                        <div class="case-image-wrap">
+                            <img class="case-image-style zoomable-image" src="img/case-2/image-2.png" alt="Написать alt-текст" width="5328" height="3996">
+                        </div>
+                        <!-- <figcaption class="case-caption">Для доработки пользователь вызывает спецализированного агента</figcaption> -->
+                    </figure>
+
+                    <section class="case-section">
+                        <p class="case-p">Теперь, после высадки пассажиров, водитель может посадить новых.</p>
+                        <p class="case-p">На иконке остановки водитель видит количество новых пассажиров. В случае если ему нужно увидеть подробную информацию про них, он может потянуть карточку вверх.</p>
+                        <p class="case-p">В случае необходимости водитель может связаться с пассажиром, открыть расширенное меню или взаимодействовать напрямую через карточку пассажира.</p>
+                        <p class="case-p">Как и в случае завершения поездки, посадку и начало пути водитель подтверждает слайдером, но теперь справа налево. Это сделано, чтобы обратить внимание водителя на то, что это посадка пассажира, и избежать действий на автомате.</p>
+                        <p class="case-p">Далее начинается поездка до следующей остановки.</p>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Обоснование ценности решения</h3>
+                        <p class="case-p">Интерфейс был построен вокруг одного сценария, но ключевого в процессе работы водителя. Все действия последовательны, что снижает вероятность ошибки и перегрузки информацией.</p>
+                        <p class="case-p">Главные действия можно выполнять с минимальным количеством нажатий, чтобы обеспечить безопасность езды.</p>
+                        <p class="case-p">Около каждого пассажира отображается сумма за проезд, чтобы обеспечить прозрачность дохода водителя и повысить его мотивацию.</p>
+                        <p class="case-p">Все шаги разбиты на этапы и сгруппированы, чтобы упростить интерфейс и дать возможность водителю совершать действия, не отвлекаясь от дороги.</p>
+                        <p class="case-p">Решение разрабатывалось с учётом масштабируемости, чтобы его можно было адаптировать под другие сценарии.</p>
+                        <p class="case-p">Решение спроектировано таким образом, чтобы не просто повторять механику такси, а переосмыслить сценарий и адаптировать интерфейс под новую модель.</p>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Создание макета сайта</h3>
+                        <div class="case-list">
+                            <p class="case-list-title">Цели:</p>
+                            <ul class="case-ul">
+                                <li>донести, почему участие в сервисе выгоднее, чем работа просто в такси;</li>
+                                <li>показать, что работа в сервисе стабильная, понятная и гибкая;</li>
+                                <li>заверить водителей, что они не будут сталкиваться с простоями и впустую тратить время и топливо;</li>
+                                <li>дать чёткий и быстрый путь для подключения (CAT).</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-list">
+                            <p class="case-list-title">Подход к дизайну:</p>
+                            <ul class="case-ul">
+                                <li>концентрироваться на выгоде и пользе для водителей;</li>
+                                <li>указать на главные преимущества сервиса (оптимизированная и эффективная работа, прозрачный доход, гибкий график и социальная польза);</li>
+                                <li>подчеркнуть, что это новый формат поездок, а не просто такси;</li>
+                                <li>Tone of Voice должен быть нейтральным, уверенным, без самовосхваления и фамильярностей.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-2/image-3.png" alt="Написать alt-текст" width="5328" height="3996">     
+                            </div>
+                            <figcaption class="case-caption">На первом экране демонстрируется главное предложение сервиса, чтобы зацепить внимание водителя и дать чёткий мотив к действию. Hero-секция показывает, что это за сервис, для кого и зачем он нужен.</p> 
+                    </figure>
+
+                    <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-2/image-4.png" alt="Написать alt-текст" width="5328" height="3996">
+                            </div>
+                            <figcaption class="case-caption">Второй экран объясняет почему это выгодно и как просто можно начать.</figcaption>
+                    </figure>
+
+                    <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-2/image-5.png" alt="Написать alt-текст" width="5328" height="3996">
+                            </div>
+                            <figcaption class="case-caption">Мобильная версия сохраняет логику и акценты, не перегружая пользователя.</figcaption>
+                    </figure>
+
+                    <section class="case-section margin-4">
+                        <h3 class="case-h2">Измерение успеха</h3>
+                        <p class="case-p">Для оценки эффективности дизайн-решения и подтверждения его ценности следует определить метрики. Если предложенное решение окажется успешным, мы сможем наблюдать следующие изменения:</p>
+
+                        <div class="case-list">
+                            <ol class="case-ol">
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Увеличение регистраций водителей через сайт</p>
+                                    <p class="case-subtitle">Количество новых водителей, успешно завершивших регистрацию через сайт.</p>
+                                    <p class="case-description">Рост числа регистраций является прямым индикатором того, что сайт эффективно доносит ценность сервиса и мотивирует присоединиться.</p>
+                                </li>
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Снижение времени простоя между поездками</p>
+                                    <p class="case-subtitle">Среднее время ожидания следующего заказа после завершения предыдущего маршрута.</p>
+                                    <p class="case-description">Уменьшение простоя означает более эффективное использование времени водителем и высокую операционную активность.</p>
+                                </li>
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Повышение удовлетворённости водителей (по NPS)</p>
+                                    <p class="case-subtitle">Измерение уровня лояльности и готовности рекомендовать сервис другим.</p>
+                                    <p class="case-description">Высокий NPS свидетельствует о доверии, удобстве и удовлетворённости от работы с приложением.</p>
+                                </li>
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Увеличение количества маршрутов, выполненных в день</p>
+                                    <p class="case-subtitle">Среднее количество заказов, выполненных одним водителем за рабочий день.</p>
+                                    <p class="case-description">Рост производительности водителей за счёт более эффективных маршрутов и снижения фрустрации при взаимодействии с интерфейсом.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="image-modal" class="image-modal">
+        <img class="modal-content" id="modal-image" alt="" src="#">
+    </div>
+
+    <script src="script/lightbox.js"></script>
+    <script src="script/selection.js"></script>
+    <script src="script/menu.js"></script>
+
+</body>
+</html>
+
+<!--     <div class="container">
         <main class="main">
             <section class="header">
                 <div class="button"><span class="arrow">←</span><span class="span-inline"><a class="link" href="https://tasiapapialuska.github.io/portfolio/">назад</a></span></div>
@@ -273,4 +649,4 @@
 
 </body>
 
-</html>
+</html> -->

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tasia Papialushka">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Совершенствование UX банкомата — Тася Попелушко</title>
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/img/site.webmanifest" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/ai-version-case.css">
+</head>
+
+<body class="body">
+
+    <header class="mobile-nav">
+        <a href="index.html" class="mobile-logo">
+            <img src="img/icon.svg" alt="" height="24" width="24">
+        </a>
+        <button class="mobile-info-btn" id="infoBtn">Инфо</button>
+    </header>
+
+    <div class="mobile-info-panel" id="infoPanel">
+        <div class="mobile-info-header">
+            <a href="index.html" class="mobile-logo">
+                <img src="img/icon.svg" alt="" height="24" width="24">
+            </a>
+            <button class="mobile-info-close" id="infoClose">Закрыть</button>
+        </div>
+        <div class="mobile-info-content">
+            <section class="profile-section">
+                <div class="logo"><a href="#"><img class="mypic" src="img/icon.svg" alt="Smile face" height="24" width="24"></a></div>
+                <h1 class="h1">Тася Попелушко</h1>
+                <p class="subtitle">Дизайнер пользовательских интерфейсов</p>
+                <div class="bio">
+                    <p class="description">Мне нравится разбираться в сложных системах и проектировать сценарии, где технологии становятся понятными и человечными. Верю, что хороший интерфейс — это баланс между строгой логикой и приятным ощущением от взаимодействия.</p>
+                    <p class="description">В свободное время изучаю код, углубляюсь в социальные науки и ищу редкую музыку.</p>
+                </div>
+                <div class="location">
+                    <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" height="18" width="18">
+                    <span class="city">Гродно, Беларусь</span>
+                </div>
+            </section>
+            <section class="sidebar-section">
+                <h2 class="h2">Опыт работы</h2>
+                <div class="entry">
+                    <span class="entry-name">Grinny.ai</span>
+                    <span class="entry-date">ноябрь 2025 — май 2026</span>
+                </div>
+            </section>
+            <section class="sidebar-section">
+                <h2 class="h2">Образование</h2>
+                <div class="entry-group">
+                    <p class="entry-org">Гродненский государственный университет им. Я. Купалы</p>
+                    <div class="entry">
+                        <span class="entry-sub">Магистратура, социология</span>
+                        <span class="entry-date">2022 — 2023</span>
+                    </div>
+                    <div class="entry">
+                        <span class="entry-sub">Бакалавриат, социология</span>
+                        <span class="entry-date">2018 — 2022</span>
+                    </div>
+                </div>
+            </section>
+            <section class="sidebar-section">
+                <h2 class="h2">Дополнительное образование</h2>
+                <div class="entry">
+                    <span class="entry-org">EPAM Designer's Workbook: self-paced course</span>
+                    <span class="entry-date">2024</span>
+                </div>
+            </section>
+            <section class="sidebar-section no-margin" id="links">
+                <h2 class="h2">Ссылки</h2>
+                <nav class="links">
+                    <span class="span-inline"><a class="link" href="mailto:papialuskatasia@proton.me">Email</a></span>
+                    <span class="span-inline"><a class="link" href="https://www.behance.net/tasiapapialuska" target="_blank">Behance</a></span>
+                    <span class="span-inline"><a class="link" href="https://dribbble.com/tpapialuska" target="_blank">Dribbble</a></span>
+                    <span class="span-inline"><a class="link" href="http://www.linkedin.com/in/tasiapapialuska" target="_blank">Linkedin</a></span>
+                    <span class="span-inline"><a class="link" href="https://drive.google.com/file/d/1wYsNKQgmoXDm-Ifi-SVeh55tp8QP_5Cs/view?usp=sharing" target="_blank">CV</a></span>
+                </nav>
+            </section>
+        </div>
+    </div>
+
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-sticky-content">
+                <section class="profile-section">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="mypic" src="img/icon.svg" alt="Smile face" height="24" width="24">
+                        </a>
+                    </div>
+                    <h1 class="h1">Тася Попелушко</h1>
+                    <p class="subtitle">Дизайнер пользовательских интерфейсов</p>
+                    <div class="bio">
+                        <p class="description">Мне нравится разбираться в сложных системах и проектировать сценарии, где технологии становятся понятными и человечными. Верю, что хороший интерфейс — это баланс между строгой логикой и приятным ощущением от взаимодействия.</p>
+                        <p class="description">В свободное время изучаю код, углубляюсь в социальные науки и ищу редкую музыку.</p>
+                    </div>
+                    <div class="location">
+                        <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" height="18" width="18">
+                        <span class="city">Гродно, Беларусь</span>
+                    </div>
+                </section>
+                <section class="sidebar-section">
+                    <h2 class="h2">Опыт работы</h2>
+                    <div class="entry">
+                        <span class="entry-name">Grinny.ai</span>
+                        <span class="entry-date">ноябрь 2025 — май 2026</span>
+                    </div>
+                </section>
+                <section class="sidebar-section">
+                    <h2 class="h2">Образование</h2>
+                    <div class="entry-group">
+                        <p class="entry-org">Гродненский государственный университет им. Я. Купалы</p>
+                        <div class="entry">
+                            <span class="entry-sub">Магистратура, социология</span>
+                            <span class="entry-date">2022 — 2023</span>
+                        </div>
+                        <div class="entry">
+                            <span class="entry-sub">Бакалавриат, социология</span>
+                            <span class="entry-date">2018 — 2022</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="sidebar-section">
+                    <h2 class="h2">Дополнительное образование</h2>
+                    <div class="entry">
+                        <span class="entry-org">EPAM Designer's Workbook: self-paced course</span>
+                        <span class="entry-date">2024</span>
+                    </div>
+                </section>
+                <section class="sidebar-section no-margin" id="links">
+                    <h2 class="h2">Ссылки</h2>
+                    <nav class="links">
+                        <span class="span-inline"><a class="link" href="mailto:papialuskatasia@proton.me">Email</a></span>
+                        <span class="span-inline"><a class="link" href="https://www.behance.net/tasiapapialuska" target="_blank">Behance</a></span>
+                        <span class="span-inline"><a class="link" href="https://dribbble.com/tpapialuska" target="_blank">Dribbble</a></span>
+                        <span class="span-inline"><a class="link" href="http://www.linkedin.com/in/tasiapapialuska" target="_blank">Linkedin</a></span>
+                        <span class="span-inline"><a class="link" href="https://drive.google.com/file/d/1wYsNKQgmoXDm-Ifi-SVeh55tp8QP_5Cs/view?usp=sharing" target="_blank">CV</a></span>
+                    </nav>
+                </section>
+            </div>
+        </aside>
+
+        <main class="main-grid scroll-container">
+            <div class="main-container-inner">
+             
+
+                <div class="case-content">
+                    <section class="case-section">
+                       <div class="case-title">
+                            <h2 class="case-title-text">Совершенствование пользовательского опыта банкомата</h2>
+                        </div> 
+                    </section>
+                    
+                    <section class="case-section">
+                        <h3 class="case-h2">Задача</h3>
+                        <p class="case-p">Разработать решение для повышения удобства и эффективности использования банкоматов.</p>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Обозначение цели</h3>
+                        <p class="case-p">Банкоматы являются неотъемлемой частью финансовой жизни. Несмотря на то что эта технология существует давно и прочно интегрирована в нашу повседневность, пользовательский опыт кардинально не менялся.</p>
+                        <p class="case-p">Улучшение взаимодействия с банкоматом позволит клиентам надёжно, безопасно, просто и комфортно выполнять денежные операции. Это, в свою очередь, повысит доверие к банку и его услугам, привлечёт новых клиентов, снизит нагрузку на представителей банка и службу поддержки. Кроме того, это расширит предоставление услуг на недостаточно охваченные аудитории, что в совокупности может привести к значительному увеличению доходов компании.</p>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Определение аудитории</h3>
+                        <p class="case-p">Две основные группы, на которые банк распространяет свои услуги, — это юридические и физические лица. В рамках нашей задачи мы сконцентрируемся на физических лицах.</p>
+                        <p class="case-p">Банкоматами пользуются люди разных возрастов, доходов, социальных классов и групп. Но можно стратифицировать пользователей по их опыту использования и определённым особенностям, которые обуславливают их пользовательский опыт.</p>
+
+                        <div class="case-group">
+                            <span class="case-group-name">Молодёжь и люди среднего возраста</span>
+                            <p class="case-p">Эта группа клиентов обычно хорошо разбирается в технологиях, часто пользуется банкоматом, и у них нет проблем с ним справиться. Это также самая крупная когорта клиентов банка, поскольку они составляют основную часть экономически активного населения и, соответственно, чаще и больше взаимодействуют с финансовыми услугами.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Подростки</span>
+                            <p class="case-p">Хотя они несовершеннолетние и не входят в общую когорту рабочей силы, подростки всё больше расширяют свои экономические права и могут являться клиентами банка. Современные подростки не имеют проблем с тем, чтобы разобраться в технических аспектах банкомата или мобильного приложения, но они не так финансово грамотны, как взрослые люди, и требуют большего контроля со стороны родителей.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Пожилые люди</span>
+                            <p class="case-p">Часто цифровые продукты не так просто им даются, хотя пожилые люди всё равно являются экономически активными, и им необходим такой же доступ к услугам и продуктам банка.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Иностранцы</span>
+                            <p class="case-p">Им также необходимо пользоваться банкоматом, и эти пользователи ожидают, что их опыт будет учтён, а свои потребности они смогут удовлетворить на привычном языке.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Люди с особыми потребностями здоровья</span>
+                            <p class="case-p">Существует много состояний здоровья, которые затрудняют пользование банкоматом, и улучшения во взаимодействии с ним могут помочь клиентам, нуждающимся в дополнительных функциях.</p>
+                        </div>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Понимание контекста и потребностей аудитории</h3>
+                        <p class="case-p">Банкоматы размещаются таким образом, чтобы человек мог получить к ним доступ быстро, в удобное время и, обычно, близко к местам, где совершаются денежные расчёты. Поэтому это, как правило, людные места, например, центр города, зоны высокой концентрации людей в районах и отделения банков.</p>
+                        <p class="case-p">Если банкомат вынесен на улицу, приходится пользоваться им в различных погодных условиях: может идти снег, дождь, светить солнце и засвечивать экран. Кроме того, около банкомата часто собираются очереди, что нервирует людей и может создавать давление на того, кто им в этот момент пользуется.</p>
+                        <p class="case-p">Клиенты ожидают, что банкомат будет доступен 24/7. Бесконтактная оплата широко распространилась и вошла в обиход, поэтому банкомат должен её поддерживать. Важным моментом остаются безопасность и обеспечение конфиденциальности действий.</p>
+
+                        <div class="case-list">
+                            <p class="case-list-title">Основные функции, которые предлагает банкомат:</p>
+                            <ul class="case-ul">
+                                <li>приём и выдача наличных;</li>
+                                <li>проверка баланса на счёте;</li>
+                                <li>печать выписок;</li>
+                                <li>оплата услуг;</li>
+                                <li>перевод денег на другие счета;</li>
+                                <li>выдача наличных в другой валюте;</li>
+                                <li>оплата кредитов и пополнение депозитов;</li>
+                                <li>действия с картой (активация, блокировка, смена PIN-кода и другое).</li>
+                            </ul>
+                        </div>
+
+                        <p class="case-p">Из всех перечисленных функций эксклюзивными для банкомата являются операции с наличными — их получение и приём, — а также, в некоторых случаях, печать выписок.</p>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Пользовательские истории</h3>
+                        <div class="cards">
+                            <blockquote class="case-quote">
+                                <p>Как пожилая женщина, я хочу понятно и безопасно выполнять необходимые операции в банкомате, чтобы избежать ошибок и чувствовать себя уверенно.</p>
+                            </blockquote>
+                            <blockquote class="case-quote">
+                                <p>Как пожилой человек с нарушениями зрения, я хочу, чтобы интерфейс банкомата был четким и контрастным, чтобы я мог совершать транзакции самостоятельно и без напряжения.</p>
+                            </blockquote>
+                            <blockquote class="case-quote">
+                                <p>Как занятой специалист, я хочу быстро выполнять банковские операции, чтобы сэкономить время и не стоять в очереди.</p>
+                            </blockquote>
+                            <blockquote class="case-quote">
+                                <p>Как родитель, я хочу иметь умеренный контроль за деньгами моего ребёнка, чтобы быть спокойным за его траты и предотвратить нежелательные расходы.</p>
+                            </blockquote>
+                            <blockquote class="case-quote">
+                                <p>Как родитель, я хочу иметь возможность контролировать и управлять тратами своего ребёнка, чтобы обеспечить его финансовую безопасность и научить основам финансовой грамотности.</p>
+                            </blockquote>
+                        </div>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Генерация идей</h3>
+                        <div class="case-list margin-2">
+                            <p class="case-list-title">В результате мозгового штурма были сформулированы следующие идеи:</p>
+                            <ul class="case-ul">
+                                <li>редизайн интерфейса;</li>
+                                <li>упрощённый режим;</li>
+                                <li>контекстная адаптация;</li>
+                                <li><span class="bg-color">персонализированный банкомат;</span></li>
+                                <li>редизайн физического оборудования.</li>
+                            </ul>
+                        </div>
+                        <div class="main-idea card">
+                            <p class="case-h2">Персонализированный банкомат</p>
+                            <p class="case-p">Пользователь сможет настроить через мобильный банкинг список «любимых» и наиболее частых операций, которые будут быстро доступны на экране банкомата после бесконтактной идентификации, минимизируя количество шагов и упрощая взаимодействие.</p>
+                            <p>Это решение позволит продолжить концепцию интеграции мобильного приложения с банкоматом.</p>
+                        </div>
+                    </section>
+
+                    <section class="case-section">
+                        <h3 class="case-h2">Приоритизация и выбор идеи</h3>
+                        <p class="case-p">Влияние дизайн-решения на разнообразные сегменты пользователей:</p>
+
+                        <div class="case-group">
+                            <span class="case-group-name">Молодёжь и люди среднего возраста</span>
+                            <p class="case-p">Эта группа хорошо разбирается в технологиях, поэтому данная функция может помочь им сэкономить важный ресурс — время.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Подростки</span>
+                            <p class="case-p">Быстрые функции помогут подросткам снизить порог перед денежными и банковскими операциями и раньше научиться их совершать.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Пожилые люди</span>
+                            <p class="case-p"><span class="bg-color">Эту группу мы выделим отдельно и будем приоритизировать в данном решении.</span> Возможность настроить несколько наиболее важных для них функций через мобильное приложение позволит уменьшить страх перед банкоматом.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Люди с особыми потребностями здоровья</span>
+                            <p class="case-p">Благодаря этой функции элементов на экране станет меньше, они будут более крупными и чёткими, что в сочетании с интеграцией аудиоассистента сделает опыт использования более удобным и доступным.</p>
+                        </div>
+                        <div class="case-group">
+                            <span class="case-group-name">Иностранцы</span>
+                            <p class="case-p">Эту группу наше решение будет охватывать в меньшей степени. Стандартный многоязычный интерфейс они, скорее всего, найдут более полезным.</p>
+                        </div>
+
+                        <div class="case-list">
+                            <p class="case-list-title">Это решение напрямую удовлетворяет ключевые потребности клиентов:</p>
+                            <ul class="case-ul">
+                                <li>ускоряется процесс использования;</li>
+                                <li>меньшее количество шагов упрощает использование;</li>
+                                <li>снижается стресс и напряжение;</li>
+                                <li>повышается доступность банкомата;</li>
+                                <li>обеспечивается безопасность благодаря современным методам идентификации.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- <section class="case-section">
+                        <h3 class="case-h2">Дизайн-решение</h3>
+                    </section> -->
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                               <img class="case-image-style zoomable-image" src="img/case-1/image-1.png" alt="Три экрана мобильного приложения с переходом к персонализации банкомата" width="3840" height="2160"> 
+                            </div>
+                            <figcaption class="case-caption">Переход к персонализации банкомата осуществляется с главного экрана в области функций быстрого доступа.</figcaption>
+                        </figure>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-2.png" alt="Настройка персонализированного банкомата" width="3840" height="2160">
+                            </div>
+                            <figcaption class="case-caption">Пользователь может выбрать операцию из широкого списка или воспользоваться подсказкой системы, которая формируется на основе его частых действий.</figcaption>
+                        </figure>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-3.png" alt="Настройка операции снять наличные" width="3840" height="2160">
+                            </div>
+                            <figcaption class="case-caption">Операции можно переименовывать и гибко настраивать.</figcaption>
+                        </figure>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-4.png" alt="Сканирование QR-кода банкомата" width="3840" height="2160">  
+                            </div>
+                            <figcaption class="case-caption">Пользователь сканирует QR-код либо использует NFC на телефоне или карту. После этого взаимодействие продолжается в интерфейсе банкомата.</figcaption>
+                        </figure>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-5.png" alt="Сплэш-скрин банкомата с QR-кодом" width="3840" height="2160">  
+                            </div>
+                            <figcaption class="case-caption">На сплэш-скрине банкомата можно найти QR-код и идентифицироваться с помощью него.</figcaption>
+                        </figure>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-6.png" alt="Персонализированный экран банкомата с функциями" width="3840" height="2160">
+                            </div>
+                            <p class="case-caption">После этого пользователь видит персонализированный экран функций с возможностью перехода на полноценный режим интерфейса банкомата.</p>
+                        </figure>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-7.png" alt="Экран ввода пин-кода" width="3840" height="2160">
+                            </div>
+                            <figcaption class="case-caption">После выбора операции пользователь должен пройти авторизацию…</figcaption>
+                        </figure>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-8.png" alt="Экран выдачи наличных" width="3840" height="2160">
+                            </div>
+                            <figcaption class="case-caption">и забрать деньги.</figcaption>
+                        </figure>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-9.png" alt="Экран завершения сессии" width="3840" height="2160">
+                            </div>
+                            <figcaption class="case-caption">А дальше продолжить выполнение операций или завершить работу.</figcaption>
+                        </figure>
+
+                        <section class="case-section">
+                            <p class="case-p">Примерно так выглядит флоу пожилого человека в новом интерфейсе банкомата:</p>
+                        </section>
+
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-10.png" alt="Флоу пожилого пользователя — шаг 1" width="3840" height="2160">
+                            </div>
+                        </figure>
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-11.png" alt="Флоу пожилого пользователя — шаг 2" width="3840" height="2160">
+                            </div>
+                        </figure>
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-12.png" alt="Флоу пожилого пользователя — шаг 3" width="3840" height="2160">
+                            </div>
+                        </figure>
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-13.png" alt="Флоу пожилого пользователя — шаг 4" width="3840" height="2160">
+                            </div>
+                        </figure>
+                        <figure class="case-image">
+                            <div class="case-image-wrap">
+                                <img class="case-image-style zoomable-image" src="img/case-1/image-14.png" alt="Флоу пожилого пользователя — шаг 5" width="3840" height="2160">
+                            </div>
+                        </figure>
+
+                    <section class="case-section margin-4">
+                        <h3 class="case-h2">Измерение успеха</h3>
+                        <p class="case-p">Для оценки эффективности предложенного дизайн-решения необходимо определить метрики. Если данное решение будет успешным, мы увидим:</p>
+
+                        <div class="case-list">
+                            <ol class="case-ol">
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Сокращение времени выполнения операции</p>
+                                    <p class="case-subtitle">Среднее время, затрачиваемое пользователем на выполнение типовых операций через персонализированный банкомат по сравнению со стандартным использованием.</p>
+                                    <p class="case-description">Существенное сокращение времени за счет предварительной настройки и упрощенного интерфейса.</p>
+                                </li>
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Повышение показателя успешности задач</p>
+                                    <p class="case-subtitle">Процент успешно завершенных операций без ошибок, особенно для сложных или редко выполняемых операций.</p>
+                                    <p class="case-description">Увеличение процента успешных операций, особенно среди пожилых людей и менее опытных пользователей.</p>
+                                </li>
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Увеличение частоты использования функции</p>
+                                    <p class="case-subtitle">Количество уникальных пользователей, регулярно использующих функцию персонализации операций в мобильном приложении.</p>
+                                    <p class="case-description">Высокий уровень вовлеченности в новую функциональность.</p>
+                                </li>
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Рост показателя удовлетворенности клиентов</p>
+                                    <p class="case-subtitle">Измерение готовности клиентов рекомендовать банк и его услуги другим.</p>
+                                    <p class="case-description">Увеличение NPS за счет повышения удобства, безопасности и инновационности сервиса.</p>
+                                </li>
+                                <li class="case-ol-item">
+                                    <p class="case-ol-title">Снижение количества обращений в службу поддержки</p>
+                                    <p class="case-subtitle">Уменьшение числа обращений клиентов, связанных с трудностями при использовании банкомата.</p>
+                                    <p class="case-description">Сокращение операционных расходов и повышение эффективности работы поддержки.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="image-modal" class="image-modal">
+        <img class="modal-content" id="modal-image" alt="" src="#">
+    </div>
+
+    <script src="script/lightbox.js"></script>
+    <script src="script/selection.js"></script>
+    <script src="script/menu.js"></script>
+
+</body>
+</html>

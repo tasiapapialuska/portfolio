@@ -184,6 +184,10 @@ html, .body {
     align-items: center;
 }
 
+.hrodna {
+    border-radius: 0px;
+}
+
 .city {
     font-size: var(--font-size-sm);
     letter-spacing: var(--letter-spacing-w);

@@ -350,9 +350,9 @@ body.modal-open {
         width: 100%;
     }
 
-    .case-image .case-image-style {
+    /* .case-image .case-image-style {
         border-radius: var(--border-radius-xs);
-    }
+    } */
 
     .main-idea.card {
         width: auto; 

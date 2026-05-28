@@ -395,9 +395,9 @@ body.modal-open {
         width: 100%;
     }
 
-    .case-image .case-image-style {
+    /* .case-image .case-image-style {
         border-radius: var(--border-radius-xs);
-    }
+    } */
 
     .case-quote {
     padding: 0rem 0.5rem;

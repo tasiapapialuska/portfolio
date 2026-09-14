@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
 
 :root {
     /***** COLORS *****/
-    --fg-color-primary: oklch(0.15 0.0078 97.46);
-    --fg-color-secondary: oklch(0.50 0.0078 97.46);
+    --fg-color-primary: oklch(0.252 0.018 93.354);
+    --fg-color-secondary: oklch(0.606 0.009 98.97);
     --color-border: oklch(0.89 0.0151 102.5);
     --color-case-border: oklch(0.21 0.0078 97.46 / 0.07);
     --bg-color: oklch(100% 0 0);
@@ -38,7 +39,7 @@
 
     /***** FONTS *****/
     --font-family-mono: 'PT Mono', monospace;
-    --font-family-sans: 'IBM Plex Sans', sans-serif;
+    --font-family-sans: 'Golos Text', sans-serif;
 
     --font-size-base: 1rem;
     /* 16px */
@@ -46,7 +47,7 @@
     /* 14px */
     --font-size-xs: 0.75rem;
     /* 12px */
-    --font-size-xxs: 0.688rem;
+    --font-size-xxs: 0.75rem;
     /* 11px */
     --font-size-lg: 1.25rem;
     /* 20px */
@@ -64,6 +65,7 @@
     --line-height-xs: 1.25;
     --line-height-equal: 1;
 
+    --letter-spacing-normal: normal;
     --letter-spacing-w: 0.1px;
     --letter-spacing-s: -0.1px;
     --letter-spacing-m: -0.3px;
@@ -154,7 +156,7 @@ html, .body {
 }
 
 .profile-section {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .main {
@@ -162,19 +164,16 @@ html, .body {
     flex-grow: 1;
 }
 
-
-
 .h1 {
     font-family: var(--font-family-mono);
-    font-size: var(--font-size-sm);
+    font-size: 15px;
     line-height: var(--line-height-s);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-sem9bold);
 }
 
 .description {
     line-height: var(--line-height-base);
     margin-bottom: 0.938rem;
-    letter-spacing: var(--letter-spacing-w);
 }
 
 .location {
@@ -190,7 +189,6 @@ html, .body {
 
 .city {
     font-size: var(--font-size-sm);
-    letter-spacing: var(--letter-spacing-w);
     color: var(--fg-color-secondary);
 }
 
@@ -298,7 +296,6 @@ hr {
     transition: color 0.16s cubic-bezier(0.25,0.46,0.45,0.94), border-color 0.16s cubic-bezier(0.25,0.46,0.45,0.94);
     border-bottom: 1px solid var(--color-border);
     line-height: var(--line-height-equal);
-    letter-spacing: var(--letter-spacing-w);
 }
 
 .arrow:hover {
@@ -411,6 +408,7 @@ hr {
 .h2 {
     font-family: var(--font-family-mono);
     font-size: var(--font-size-xxs);
+    line-height: var(--line-height-s);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
     color: var(--fg-color-secondary);
@@ -579,13 +577,12 @@ hr {
     font-size: var(--font-size-sm);
     color: var(--fg-color-secondary);
     margin-bottom: 1rem;
-    letter-spacing: var(--letter-spacing-w);
 }
 
 .bio p {
     margin-bottom: 1rem;
     font-size: var(--font-size-sm);
-    line-height: 1.5;
+    line-height: var(--line-height-base);
 }
 
 /* Сетки внутри записей */
@@ -594,18 +591,17 @@ hr {
     justify-content: space-between;
     align-items: baseline;
     gap: 12px;
-    letter-spacing: var(--letter-spacing-w);
 }
 
 .entry-org, .entry-name {
     font-size: var(--font-size-sm);
     color: var(--fg-color-primary);
-    letter-spacing: var(--letter-spacing-w);
 }
 
 .entry-sub, .entry-date {
     font-size: var(--font-size-sm);
     color: var(--fg-color-gray);
+    font-variant-numeric: tabular-nums;
 }
 
 .sidebar-divider {
@@ -614,7 +610,6 @@ hr {
     margin: 32px 0;
 }
 
-/* Ссылки без лишних отступов */
 .nav-link {
     display: block;
     text-decoration: none;
@@ -770,6 +765,7 @@ hr {
         background: var(--bg-color);
         z-index: 200;
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .mobile-info-panel.is-open {
@@ -842,7 +838,6 @@ hr {
 
     .city {
         line-height: var(--line-height-base);
-        letter-spacing: var(--letter-spacing-w);
     }
 
     .h3 {

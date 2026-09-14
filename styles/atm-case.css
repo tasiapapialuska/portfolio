@@ -249,6 +249,10 @@ ul li::marker {
     margin-bottom: 0;
 }
 
+.margin-1 {
+    margin-bottom: 1rem;
+}
+
 .margin-2 {
     margin-bottom: 2rem;
 }
@@ -288,8 +292,8 @@ body.modal-open {
 }
 
 .modal-content {
-    max-width: 80vw;
-    max-height: 80vh;
+    max-width: 90vw;
+    max-height: 90vh;
     width: auto;
     height: auto;
     border-radius: 0px;

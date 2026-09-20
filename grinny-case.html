@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Grinny.ai — Тася Попелушко</title>
     <link rel="icon" type="image/png" href="img/favicon96.png?v=2" sizes="96x96" />
-    <!-- <link rel="icon" type="image/svg+xml" href="img/favicon-v3.svg" /> -->
+    <link rel="preload" href="fonts/GolosText-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="shortcut icon" href="img/favicon.ico?v=2" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png?v=2" />
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
@@ -43,7 +43,7 @@
                     <p class="description">В свободное время изучаю код, углубляюсь в социальные науки и ищу редкую музыку.</p>
                 </div>
                 <div class="location">
-                    <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" height="18" width="18">
+                    <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" fetchpriority="high" decoding="async" height="18" width="18">
                     <span class="city">Гродно, Беларусь</span>
                 </div>
             </section>
@@ -95,7 +95,7 @@
                 <section class="profile-section">
                     <div class="logo">
                         <a href="index.html">
-                            <img class="mypic" src="img/icon.svg" alt="Smile face" height="24" width="24">
+                            <img class="mypic" src="img/icon.svg" alt="Smile face" fetchpriority="high" decoding="async" height="24" width="24">
                         </a>
                     </div>
                     <h1 class="h1">Тася Попелушко</h1>
@@ -105,7 +105,7 @@
                         <p class="description">В свободное время изучаю код, углубляюсь в социальные науки и ищу редкую музыку.</p>
                     </div>
                     <div class="location">
-                        <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" height="18" width="18">
+                        <img class="hrodna" src="img/hrodna.webp" alt="Гродно, Беларусь" fetchpriority="high" decoding="async" height="18" width="18">
                         <span class="city">Гродно, Беларусь</span>
                     </div>
                 </section>
@@ -205,7 +205,7 @@
 
                     <figure class="case-image">
                             <div class="case-image-wrap">
-                               <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 11.webp" alt="Написать alt-текст" width="3840" height="2160">
+                               <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 11.webp" alt="Написать alt-текст" fetchpriority="high" decoding="async" width="3840" height="2160">
                             </div>
                     </figure>
 
@@ -326,20 +326,20 @@
                     
                     <figure class="case-image">
                             <div class="case-image-wrap">
-                                <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 1.webp" alt="Написать alt-текст" width="5328" height="3996">
+                                <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 1.webp" alt="Написать alt-текст" loading="lazy"  decoding="async" width="5328" height="3996">
                                 <figcaption class="case-caption">Работу можно начать сразу с главной страницы сервиса.</figcaption> 
                             </div>
                     </figure>
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 2.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 2.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Пользователь вводит промпт в инпут на главной странице. Например: «Придумай концепт рекламы кроссовок». Система автоматически определяет модальность.</figcaption> 
                         </div>
                     </figure>
 
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 3.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 3.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Создаётся новый чат, и сразу начинает генерироваться ответ.</figcaption>
                         </div>
                     </figure>
@@ -353,13 +353,13 @@
 
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 5.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 5.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">В чате приходит ответ от ИИ. Пользователь хочет докрутить идею — вызывает через @ агента-маркетолога прямо в поле ввода.</figcaption>
                         </div>
                     </figure>
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 7.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 7.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Агент разворачивает концепцию и в конце предлагает визуализировать результат. Пользователь соглашается.</figcaption>
                         </div>
                     </figure>
@@ -373,13 +373,13 @@
 
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 8.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 8.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Появляется диалоговый алерт с предупреждением о переходе в чат генерации изображений — это важно для прозрачности списания токенов.</figcaption>
                         </div>
                     </figure>
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 9.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 9.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">После подтверждения открывается новый чат с готовым промптом в инпуте.</figcaption>
                         </div>
                     </figure>
@@ -393,19 +393,19 @@
                         
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 10.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 10.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Интерфейс меняется: слева чат с историей и настройками, справа галерея результатов. Происходит генерация 4-х вариантов концепта.</figcaption> 
                         </div>
                     </figure>  
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 11.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 11.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">После генерации пользователь может выбрать изображение для доработки.</figcaption> 
                         </div>
                     </figure> 
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 16.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 16.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Изображение откроется для индивидуального просмотра и манипуляций с ним.</figcaption> 
                         </div>
                     </figure> 
@@ -419,25 +419,25 @@
 
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 12.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 12.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Пользователь выбирает «Создать видео».</figcaption>
                         </div>
                     </figure> 
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 13.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 13.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Юзер может отправить сразу или дописать промпт с конкретными деталями.</figcaption>
                         </div>
                     </figure> 
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 14.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 14.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">ИИ генерирует видео — оно появляется в той же галерее.</figcaption>
                         </div>
                     </figure>
                     <figure class="case-image">
                         <div class="case-image-wrap">
-                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 15.webp" alt="Написать alt-текст" width="5328" height="3996">
+                            <img class="case-image-style zoomable-image" src="img/case-grinny/2 · 15.webp" alt="Написать alt-текст" loading="lazy" decoding="async" width="5328" height="3996">
                             <figcaption class="case-caption">Видео также доступно для индивидуального просмотра и дальнейших взаимодействий.</figcaption>
                         </div>
                     </figure>
